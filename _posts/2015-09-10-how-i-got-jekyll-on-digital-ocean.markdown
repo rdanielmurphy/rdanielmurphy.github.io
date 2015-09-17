@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New Jekyll powered blog!"
+title:  "Creating a Jekyll Blog!"
 date:   2015-09-10 12:04:40
 categories: jekyll digitalocean nginx blog
 ---
