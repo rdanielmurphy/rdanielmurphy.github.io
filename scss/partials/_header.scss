@@ -1,6 +1,5 @@
 /*This is the header section styles*/
 
-
 .header{
   background:$background-path 50% 0 no-repeat fixed;
 
@@ -10,20 +9,50 @@
   margin: 0 auto;
   padding: 0;
 
+  .sitenavbar {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    border: #2F00FF;
+  }
+  .navlist {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    overflow: hidden;
+    float: right;
+  }
+  .navlistitem {
+    font-size: 20px;
+    float: left;
+  }
+  .navlink {
+    display: block;
+    width: 60px;
+  }
 
-//  Header title and caption
-   h2 {
+  //Header title and caption
+  h2 {
       text-align: center;
       font-family: $header-font-family;
       font-size: 3em;
       font-weight: 900;
-      color: $header-font-color;
+      color: black !important;
       letter-spacing: 0.2em;
-
       margin-top: 20%;
+      background-color: white;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
       a{
         margin-left: 0%;
-        color:$header-font-color;
+        color: black !important;
       }
     }
 
@@ -41,7 +70,6 @@
 
   a{
     text-decoration: none !important;
-    margin-left: 80%;
     color: #fff;
     
     @media screen and (max-width: 360px) {
