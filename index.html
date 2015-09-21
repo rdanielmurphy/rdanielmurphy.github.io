@@ -5,27 +5,8 @@ layout: default
 
 <!-- Start of the section post-loop-->
 <section class="post-loop container-fluid">
-    <h1>HEYHEY</h1>
-    {% for post in site.posts %}
-    <div class="row single-post">
-        <div>
-            <h1 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-
-            <div class="post-details">
-                <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-
-            </div>
-
-            <p class="post-excerpt">
-                {{post.excerpt | length: 140 }}
-            </p>
-
-            <a class="post-button pi-big pi-retro pi-flat" href="{{ post.url }}">More</a>
-
-        </div>
-    </div>
-
-    {% endfor %}
+    <p>I'm Daniel, aka Danny, aka Murphy.  I'm a software engineer by trade, specializing in mobile front end and backend, and an amatuer world traveler/poker player.  Currently based in the D.C. metro area, where I've lived all my life.  Thanks for checking out my site! </p>
+    <p>Don't forget to check out my blog where I rant about programming, traveling, poker, bodybuilding, and other random stuff!</p>
 </section>
 
 
