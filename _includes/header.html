@@ -46,7 +46,8 @@
 
 
     <!-- Main Head Title -->
-    {% if site.title %}<h2><a href="{{site.baseurl}}/">{{site.title}}</a></h2>{% endif %}
+    {% if page.title %}<h2>{{page.title}}</h2>{% endif %}
+    {% if page.subtitle %}<h3>{{page.subtitle}}</h3>{% endif %}
     {% if site.smalltalk %}<p>{{ site.smalltalk }}</p>{% endif %}
 
 
