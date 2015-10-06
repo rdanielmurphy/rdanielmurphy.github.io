@@ -1,7 +1,7 @@
 
 <!-- Start with the header -->
 {% if page.backgroundpic %}
-<section class="header" id="header" style="background:url('{{site.baseurl}}/img/{{page.backgroundpic}}') 50% 0 no-repeat fixed; background-size: 100%;">
+<section class="header" id="header" style="background:url('{{site.baseurl}}/img/{{page.backgroundpic}}') 50% 0 no-repeat fixed; background-size: 100% 600px;">
 {% else %}
 <section class="header" id="header" style="background:url('{{site.baseurl}}/img/bg_orig.jpeg') 50% 0 no-repeat fixed;">
 {% endif %}
@@ -53,10 +53,9 @@
     {% if page.title %}<h2>{{page.title}}</h2>{% endif %}
     {% if page.subtitle %}<h3>{{page.subtitle}}</h3>{% endif %}
     {% if site.smalltalk %}<p>{{ site.smalltalk }}</p>{% endif %}
-    {% if page.imagedetails %}<p><div class="imagedetails">{{ page.imagedetails }}</div></p>{% endif %}
 </section>
 
-
+{% if page.imagedetails %}<div class="imagedetails">{{ page.imagedetails }}</div>{% endif %}
 
 
 

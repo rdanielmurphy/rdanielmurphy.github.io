@@ -2,16 +2,9 @@
 .header {
   background: url("../img/bg.jpeg") 50% 0 no-repeat fixed;
   width: 100%;
-  min-height: 800px;
+  height: 600px;
   margin: 0 auto;
   padding: 0; }
-  .header .imagedetails {
-    right: 0;
-    position: absolute;
-    bottom: 0;
-    padding-right: 10px;
-    font-style: italic;
-    font-size: smaller; }
   .header .sitenavbar {
     top: 0px;
     position: fixed;
@@ -46,6 +39,9 @@
     margin-right: auto;
     padding-top: 5px;
     padding-bottom: 5px; }
+    @media only screen and (max-width: 500px) {
+      .header h2 {
+        font-size: 1.8em; } }
     .header h2 a {
       margin-left: 0%;
       color: black !important; }
@@ -62,6 +58,9 @@
     margin-right: auto;
     padding-top: 5px;
     padding-bottom: 5px; }
+    @media only screen and (max-width: 500px) {
+      .header h3 {
+        font-size: 1.8em; } }
   .header p {
     text-align: center;
     font-family: "Monostate", sans-serif;
@@ -70,6 +69,9 @@
     color: #fff;
     letter-spacing: .1em;
     margin-top: 2%; }
+    @media only screen and (max-width: 500px) {
+      .header p {
+        font-size: 1em; } }
   .header a {
     text-decoration: none !important;
     color: #fff; }
@@ -85,6 +87,12 @@
       text-decoration: none; }
       .header .social-pack a:hover {
         color: #00b3ee; }
+
+.imagedetails {
+  float: right;
+  padding-right: 10px;
+  font-style: italic;
+  font-size: smaller; }
 
 .post-loop {
   margin-top: 10%;
