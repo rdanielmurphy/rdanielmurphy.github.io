@@ -2,6 +2,8 @@
 layout: post
 title:  "Getting your domain name on your Digital Ocean droplet"
 date:   2015-09-13 09:01:45
+backgroundpic: museo_de_oro_bogota_gates.jpg
+imagedetails: Museo de Oro, Bogota, Colombia
 categories: digitalocean hostname
 --- 
 

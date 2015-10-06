@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "New Jekyll powered blog!"
+backgroundpic: bogota_microsoft.jpg
 date:   2015-09-09 21:04:40
+imagedetails: Microsfot HQ, Bogota, Colombia
 categories: jekyll update blog
 ---
 

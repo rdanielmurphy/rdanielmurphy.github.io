@@ -9,6 +9,14 @@
   margin: 0 auto;
   padding: 0;
 
+  .imagedetails {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    padding-right: 10px;
+    font-style: italic;
+    font-size: smaller;
+  }
   .sitenavbar {
     top: 0px;
     position: fixed;

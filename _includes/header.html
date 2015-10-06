@@ -1,6 +1,10 @@
 
 <!-- Start with the header -->
-<section class="header" id="header">
+{% if page.backgroundpic %}
+<section class="header" id="header" style="background:url('{{site.baseurl}}/img/{{page.backgroundpic}}') 50% 0 no-repeat fixed; background-size: 100%;">
+{% else %}
+<section class="header" id="header" style="background:url('{{site.baseurl}}/img/bg_orig.jpeg') 50% 0 no-repeat fixed;">
+{% endif %}
 
 <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" style="padding-left: 20px; padding-right: 20px;">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,10 +40,10 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="{{site.baseurl}}/">Home</a></li>
-                <li><a href="{{site.baseurl}}/blog">Blog</a></li>
-                <li><a href="{{site.baseurl}}/about">About</a></li>
-                <li><a href="{{site.baseurl}}/resume">Resume  </a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/projects">Projects</a></li>
             </ul>
         </div>
     </nav>
@@ -49,8 +53,7 @@
     {% if page.title %}<h2>{{page.title}}</h2>{% endif %}
     {% if page.subtitle %}<h3>{{page.subtitle}}</h3>{% endif %}
     {% if site.smalltalk %}<p>{{ site.smalltalk }}</p>{% endif %}
-
-
+    {% if page.imagedetails %}<p><div class="imagedetails">{{ page.imagedetails }}</div></p>{% endif %}
 </section>
 
 

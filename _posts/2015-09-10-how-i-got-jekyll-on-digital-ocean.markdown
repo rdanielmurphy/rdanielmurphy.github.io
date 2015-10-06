@@ -2,6 +2,8 @@
 layout: post
 title:  "Creating a Jekyll Blog!"
 date:   2015-09-10 12:04:40
+backgroundpic: bolivia_trains.jpg
+imagedetails: Abandoned Trains, Uyuni, Bolivia
 categories: jekyll digitalocean nginx blog
 ---
 

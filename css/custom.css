@@ -5,6 +5,13 @@
   min-height: 800px;
   margin: 0 auto;
   padding: 0; }
+  .header .imagedetails {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    padding-right: 10px;
+    font-style: italic;
+    font-size: smaller; }
   .header .sitenavbar {
     top: 0px;
     position: fixed;

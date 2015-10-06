@@ -1,6 +1,7 @@
 ---
 layout: page
 title: San Fran Crime App
+backgroundpic: sanfran.jpg
 permalink: /projects/sanfran_crime_app.html
 ---
 

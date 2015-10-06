@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Colombia"
+backgroundpic: santa_marta_tony_stark.jpg
+imagedetails: Tony Stark and I in Santa Marta, Colombia
 date:   2015-09-25 11:55:26
 categories: travel colombia
 ---
