@@ -2,12 +2,20 @@
 
 .header{
   background:$background-path 50% 0 no-repeat fixed;
+  background-size: 100% 600px;
+  @media only screen and (max-width: 500px) {
+    background-size: 100% 300px;
+  }
 
   width: 100%;
+  @media only screen and (max-width: 500px) {
+    height: 300px;
+  }
   height: 600px;
 
   margin: 0 auto;
   padding: 0;
+  display: table;
 
   .sitenavbar {
     top: 0px;
@@ -34,6 +42,11 @@
     width: 60px;
   }
 
+  .headingtitle {
+      display: table-cell;
+      vertical-align: middle;
+  }
+
   //Header title and caption
   h2 {
       text-align: center;
@@ -45,13 +58,9 @@
       font-weight: 900;
       color: black !important;
       letter-spacing: 0.2em;
-      margin-top: 20%;
       background-color: white;
       max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 5px;
-      padding-bottom: 5px;
+      margin: 0 auto;
 
       a{
         margin-left: 0%;
@@ -60,22 +69,19 @@
     }
   //Header title and caption
   h3 {
-      text-align: center;
-      font-family: $header-font-family;
-      @media only screen and (max-width: 500px) {
-        font-size: 1.8em; 
-      }
-      font-size: 3em;
-      font-weight: 900;
-      color: white !important;
-      letter-spacing: 0.2em;
-      background-color: black;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 5px;
-      padding-bottom: 5px;
+    text-align: center;
+    font-family: "Monostate", sans-serif;
+    @media only screen and (max-width: 500px) {
+      font-size: 1.8em; 
     }
+    font-size: 3em;
+    font-weight: 900;
+    color: black !important;
+    letter-spacing: 0.2em;
+    background-color: white;
+    max-width: 700px;
+    margin: 0 auto;
+  }
 
 //    Header caption styles
   p{

@@ -1,10 +1,18 @@
 /*This is the header section styles*/
 .header {
   background: url("../img/bg.jpeg") 50% 0 no-repeat fixed;
+  background-size: 100% 600px;
   width: 100%;
   height: 600px;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  display: table; }
+  @media only screen and (max-width: 500px) {
+    .header {
+      background-size: 100% 300px; } }
+  @media only screen and (max-width: 500px) {
+    .header {
+      height: 300px; } }
   .header .sitenavbar {
     top: 0px;
     position: fixed;
@@ -25,6 +33,9 @@
   .header .navlink {
     display: block;
     width: 60px; }
+  .header .headingtitle {
+    display: table-cell;
+    vertical-align: middle; }
   .header h2 {
     text-align: center;
     font-family: "Monostate", sans-serif;
@@ -32,13 +43,9 @@
     font-weight: 900;
     color: black !important;
     letter-spacing: 0.2em;
-    margin-top: 20%;
     background-color: white;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5px;
-    padding-bottom: 5px; }
+    margin: 0 auto; }
     @media only screen and (max-width: 500px) {
       .header h2 {
         font-size: 1.8em; } }
@@ -50,14 +57,11 @@
     font-family: "Monostate", sans-serif;
     font-size: 3em;
     font-weight: 900;
-    color: white !important;
+    color: black !important;
     letter-spacing: 0.2em;
-    background-color: black;
+    background-color: white;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5px;
-    padding-bottom: 5px; }
+    margin: 0 auto; }
     @media only screen and (max-width: 500px) {
       .header h3 {
         font-size: 1.8em; } }
