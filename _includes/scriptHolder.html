@@ -13,7 +13,28 @@
 <script src="{{"js/snippet.js" | prepend: site.baseurl}}"></script>
 <!-- /end of parallax js -->
 
+<script>
+var SMALL_SCREEN = 500;
+var LARGE_SCREEN = 1000;
+size = LARGE_SCREEN;
 
+window.onresize = function(event) {
+	resizeBackground();
+};
+window.onload = function(event) {
+	resizeBackground();
+}
+function resizeBackground() {
+	if (size == LARGE_SCREEN && window.innerWidth < SMALL_SCREEN) {
+		var url = $('#header').css("background-size", "100% 300px");
+		size = SMALL_SCREEN;
+	}
+	else if (size == SMALL_SCREEN && window.innerWidth > SMALL_SCREEN) {
+		var url = $('#header').css("background-size", "100% 600px");
+		size = LARGE_SCREEN;
+	}
+}
+</script>
 
 <!-- Add your google analytics here -->
 <!-- Change the XXXXXXX section in your site id -->

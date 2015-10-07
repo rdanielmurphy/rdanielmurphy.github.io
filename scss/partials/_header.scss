@@ -1,12 +1,6 @@
 /*This is the header section styles*/
 
 .header{
-  background:$background-path 50% 0 no-repeat fixed;
-  background-size: 100% 600px;
-  @media only screen and (max-width: 500px) {
-    background-size: 100% 300px;
-  }
-
   width: 100%;
   @media only screen and (max-width: 500px) {
     height: 300px;
