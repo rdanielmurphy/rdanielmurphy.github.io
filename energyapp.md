@@ -12,8 +12,7 @@ This app was created for a Energy.gov hackathon.  Not sure what every happened w
 
 
 ###Heatmap
-![heatmap](/img/energyapp/mapenergy.png)
-
+<img src="/img/energyapp/mapenergy.png" alt="heatmap" style="width: 100%;"/>
 
 ###Chart
-![chart](/img/energyapp/chartenergy.png)
+<img src="/img/energyapp/chartenergy.png" alt="chart" style="width: 100%;"/>

@@ -98,8 +98,8 @@
   font-size: smaller; }
 
 .post-loop {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 10%; }
   @media screen and (max-width: 360px) {
     .post-loop {
@@ -260,8 +260,9 @@ hr {
   padding: 30px 0; }
 
 .container {
-  width: 1200px;
-  margin: 0 auto; }
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px; }
 
 ul.grid-nav {
   list-style: none;
@@ -342,7 +343,7 @@ ul.rig.columns-4 li {
 
 @media (max-width: 1199px) {
   .container {
-    width: auto;
+    width: 90%;
     padding: 0 10px; } }
 @media (max-width: 480px) {
   ul.grid-nav li {

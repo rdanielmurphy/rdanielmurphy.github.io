@@ -22,7 +22,7 @@ whois mysite.com
 
 My control panel looked like this: 
 
-![nameservers](/img/domain-nameservers.png)
+<img src="/img/domain-nameservers.png" alt="nameservers" style="width: 100%;"/>
 
 So change the domain servers to match the DigitalOcean domain servers:
 
@@ -42,13 +42,13 @@ Name Server: NS3.DIGITALOCEAN.COM
 
 Log into the Digital Ocean control panel and go to DNS.  Add a domain like below:
 
-![nameservers](/img/add-domain.png)
+<img src="/img/add-domain.png" alt="domain" style="width: 100%;"/>
 
 Don't add a www subdomain to the beginning.  Just the domain name.
 
 On the next page you will add the subdomains.  Below is what mine looks like.  I have rdanielmurphy.com, test.rdanielmurphy.com, and www.rdanielmurphy.com.  In that order.
 
-![nameservers](/img/sub-domains.png)
+<img src="/img/sub-domains.png" alt="subdomains" style="width: 100%;"/>
 
 ##Finished!!
 
