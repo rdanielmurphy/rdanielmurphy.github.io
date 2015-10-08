@@ -2,6 +2,7 @@
 layout: page
 title: USA Energy App
 permalink: /projects/energy_app.html
+backgroundpic: wood.jpg
 ---
 
 ##Backstory
