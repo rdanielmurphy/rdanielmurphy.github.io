@@ -6,6 +6,9 @@
     font-family: "Monostate", sans-serif;
     font-size: 5em;
     font-weight: 900;
+    @media only screen and (max-width: 500px) {
+      font-size: 2em;
+    }
   }
   small{
     font-kerning: normal;
@@ -20,10 +23,15 @@
   font-family: "Monostate", sans-serif;
   font-weight: 100;
   font-size: 1.3em;
-
+  @media only screen and (max-width: 500px) {
+    font-size: 1.1em;
+  }
   blockquote {
       font-family: "Arial", sans-serif;
       font-size: 1.9em;
+      @media only screen and (max-width: 500px) {
+        font-size: 1.3em;
+      }
       font-style: italic;
       font-weight: 600;
       color: #262626;

@@ -194,6 +194,9 @@
     font-family: "Monostate", sans-serif;
     font-size: 5em;
     font-weight: 900; }
+    @media only screen and (max-width: 500px) {
+      .single-post-title-main h2 {
+        font-size: 2em; } }
   .single-post-title-main small {
     font-kerning: normal;
     letter-spacing: .2em;
@@ -204,6 +207,9 @@
   font-family: "Monostate", sans-serif;
   font-weight: 100;
   font-size: 1.3em; }
+  @media only screen and (max-width: 500px) {
+    .post {
+      font-size: 1.1em; } }
   .post blockquote {
     font-family: "Arial", sans-serif;
     font-size: 1.9em;
@@ -213,6 +219,9 @@
     margin-left: 0% !important;
     margin-top: 5%;
     margin-bottom: 5%; }
+    @media only screen and (max-width: 500px) {
+      .post blockquote {
+        font-size: 1.3em; } }
 
 .single-author {
   margin-left: 10%; }

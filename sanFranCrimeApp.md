@@ -14,16 +14,16 @@ This app was created for a job interview to show my skills.  Didn't see much rea
 * Place cameras and police vehicles on problem areas.
 
 ###Heatmap
-<img src="/img/sf-crime/heatmap.jpg" alt="heatmap" style="width: 100%;"/>
+<img src="/img/sf-crime/heatmap.jpg" alt="heatmap" style="max-width:100%; height:auto;"/>
 
 ###Clusters
-<img src="/img/sf-crime/clusters.jpg" alt="clusters" style="width: 100%;"/>
+<img src="/img/sf-crime/clusters.jpg" alt="clusters" style="max-width:100%; height:auto;"/>
 
 ###Clusters and Pins
-<img src="/img/sf-crime/clusters2.jpg" alt="pins" style="width: 100%;"/>
+<img src="/img/sf-crime/clusters2.jpg" alt="pins" style="max-width:100%; height:auto;"/>
 
 ###Filters
-<img src="/img/sf-crime/filters.jpg" alt="filters" style="width: 100%;"/>
+<img src="/img/sf-crime/filters.jpg" alt="filters" style="max-width:100%; height:auto;"/>
 
 ###Police cars and Cameras
-<img src="/img/sf-crime/carsandcameras.jpg" alt="cameras" style="width: 100%;"/>
+<img src="/img/sf-crime/carsandcameras.jpg" alt="cameras" style="max-width:100%; height:auto;"/>
