@@ -12,10 +12,10 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/resume">Resume</a></li>
-                <li><a href="/projects">Projects</a></li>
+                <li><a href="{{site.url}}">Home</a></li>
+                <li><a href="{{site.baseurl}}/blog">Blog</a></li>
+                <li><a href="{{site.baseurl}}/resume">Resume</a></li>
+                <li><a href="{{site.baseurl}}/projects">Projects</a></li>
             </ul>
         </div>
 </nav>
@@ -28,9 +28,9 @@
 
     <!-- Main Head Title -->
     <div class="headingtitle">
-        {% if page.title %}<h2>{{page.title}}</h2>{% endif %}
+        {% if page.title %}<h2><span>{{page.title}}</span></h2>{% endif %}
         <br>
-        {% if page.subtitle %}<h3>{{page.subtitle}}</h3>{% endif %}
+        {% if page.subtitle %}<h3><span>{{page.subtitle}}</span></h3>{% endif %}
         <br>
         {% if site.smalltalk %}<p>{{ site.smalltalk }}</p>{% endif %}   
     </div>

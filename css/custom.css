@@ -31,6 +31,14 @@
   .header .headingtitle {
     display: table-cell;
     vertical-align: middle; }
+  .header h2 span {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 10px;
+    padding-right: 10px; }
+  .header h3 span {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 10px;
+    padding-right: 10px; }
   .header h2 {
     text-align: center;
     font-family: "Monostate", sans-serif;
@@ -38,8 +46,6 @@
     font-weight: 900;
     color: black !important;
     letter-spacing: 0.2em;
-    background-color: white;
-    max-width: 700px;
     margin: 0 auto; }
     @media only screen and (max-width: 500px) {
       .header h2 {
@@ -54,8 +60,6 @@
     font-weight: 900;
     color: black !important;
     letter-spacing: 0.2em;
-    background-color: white;
-    max-width: 700px;
     margin: 0 auto; }
     @media only screen and (max-width: 500px) {
       .header h3 {
@@ -94,7 +98,6 @@
   font-size: smaller; }
 
 .post-loop {
-  margin-top: 10%;
   margin-left: 25%;
   margin-right: 25%;
   margin-bottom: 10%; }
