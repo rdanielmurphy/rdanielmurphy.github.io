@@ -13,7 +13,15 @@ This app was created for a Energy.gov hackathon.  Not sure what every happened w
 
 
 ###Heatmap
-<img src="/img/energyapp/mapenergy.png" alt="heatmap" style="width: 100%;"/>
+<img src="/img/energyapp/mapenergy.png" alt="heatmap" style="max-width: 50%;"/>
+<br>
 
 ###Chart
-<img src="/img/energyapp/chartenergy.png" alt="chart" style="width: 100%;"/>
+<img src="/img/energyapp/chartenergy.png" alt="chart" style="max-width: 50%;"/>
+<br>
+
+##Download
+<a href="https://play.google.com/store/apps/details?id=com.rdanielmurphy.EnergyApp">
+  <img alt="Get it on Google Play"
+       src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+</a>

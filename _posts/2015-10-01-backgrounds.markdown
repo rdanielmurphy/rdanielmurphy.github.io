@@ -17,8 +17,13 @@ But sometimes I will be using background images that are free of use that I foun
 <br>
 
 [Chopped Wood] (Energy App page)
-<img src="/img/wood.jpg" alt="iphoneblueprint" style="width: 90%;"/>
+<img src="/img/wood.jpg" alt="choppedwood" style="width: 90%;"/>
 
+<br>
+
+[Money] (FundFind Page)
+<img src="/img/fundfind.jpg" alt="money" style="width: 90%;"/>
 
 [iPhone BluePrint]:   http://www.wallconvert.com/wallpapers/typography/iphone-blueprint-19446.html
 [Chopped Wood]:   https://pixabay.com/en/wood-material-fire-burn-pieces-731389/
+[Money]:   http://www.wallconvert.com/wallpapers/digital-art/100-dollar-bill-close-up-16535.html

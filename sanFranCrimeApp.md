@@ -27,3 +27,9 @@ This app was created for a job interview to show my skills.  Didn't see much rea
 
 ###Police cars and Cameras
 <img src="/img/sf-crime/carsandcameras.jpg" alt="cameras" style="max-width:100%; height:auto;"/>
+
+<br>
+<br>
+Source code is hosted on a public repo on [GitHub][github]
+
+[github]:     https://github.com/rdanielmurphy/SanFranCrimeApp
