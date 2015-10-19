@@ -38,6 +38,11 @@ function resizeBackground() {
 
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
+  {% if page.includeLeaflet %} 
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+    <script src="../js/senti.js"></script>
+  {% endif %}
+  
 <!-- Add your google analytics here -->
 <!-- Change the XXXXXXX section in your site id -->
 <script>
