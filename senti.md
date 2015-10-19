@@ -1,13 +1,17 @@
 ---
 layout: page
-title: Senti
-permalink: /projects/senti.html
-backgroundpic: fundfind.jpg
+title: SenTy
+permalink: /projects/senty.html
+backgroundpic: sentymap.jpg
 includeLeaflet: true
 ---
 
-<div class="form-group">
-  <label for="usr">Sentiment Query:</label>
-  <input type="text" class="form-control" id="usr" value="Uber">
+<label for="usr">Public Sentiment Query:</label>
+<div class="input-group">
+   	<input type="text" class="form-control" id="query" value="Uber">
+   	<span class="input-group-btn">
+    	<button class="btn btn-default" id="runQueryBtn" type="button">Go!</button>
+   	</span>
 </div>
- <div id="map" style="height: 700px;"></div>
+<br>
+<div id="map" style="height: 700px;"></div>

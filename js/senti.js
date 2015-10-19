@@ -8,67 +8,89 @@ L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/{type}/{z}/{x}/{y}.{ext}', {
       subdomains: '1234'
 }).addTo(map);
 
-L.marker([37.09024, -95.712891]).addTo(map)
-	.bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-	.openPopup();
+$( "#runQueryBtn" ).click(function() {
+	var search = $( "#query" ).val();
+	var apicall = "http://sentiment-meltingpotapp.rhcloud.com/gettweets/";
+	var eastqueryurl = apicall + "east/" + search;
+	var centerqueryurl = apicall + "center/" + search;
+	var westqueryurl = apicall + "west/" + search;
 
+	//east
+	$.ajax({
+		type: 'GET',
+	  	dataType: 'jsonp',
+	  	jsonpCallback: 'callback',
+	  	url: eastqueryurl,
+	  	data: { },
+	  	beforeSend:function(){
+	  	},
+	  	success:function(data){
+	    	renderSentiment(data, eastMarkersList);
 
-/*
-makeCorsRequest();
+	    	//center
+	    	$.ajax({
+				type: 'GET',
+			  	dataType: 'jsonp',
+			  	jsonpCallback: 'callback',
+			  	url: centerqueryurl,
+			  	data: { },
+			  	beforeSend:function(){
+			  	},
+			  	success:function(data){
+			    	renderSentiment(data, centerMarkersList);
 
-// Create the XHR object.
-function createCORSRequest(method, url) {
-  var xhr = new XMLHttpRequest();
-  if ("withCredentials" in xhr) {
-    // XHR for Chrome/Firefox/Opera/Safari.
-    xhr.open(method, url, true);
-  } else if (typeof XDomainRequest != "undefined") {
-    // XDomainRequest for IE.
-    xhr = new XDomainRequest();
-    xhr.open(method, url);
-  } else {
-    // CORS not supported.
-    xhr = null;
-  }
-  return xhr;
-}
-// Make the actual CORS request.
-function makeCorsRequest() {
-  var url = 'http://sentiment-meltingpotapp.rhcloud.com/asciimo';
-
-  var xhr = createCORSRequest('GET', url);
-  if (!xhr) {
-    alert('CORS not supported');
-    return;
-  }
-
-  // Response handlers.
-  xhr.onload = function() {
-    var text = xhr.responseText;
-    alert(text);
-  };
-
-  xhr.onerror = function() {
-    alert('Woops, there was an error making the request.');
-  };
-
-  xhr.send();
-}
-*/
-
-
-$.ajax({
-  type: 'GET',
-  dataType: 'jsonp',
-  jsonpCallback: 'callback',
-  url: 'http://sentiment-meltingpotapp.rhcloud.com/asciimo',
-  data: { },
-  beforeSend:function(){
-  },
-  success:function(data){
-    alert(data);
-  },
-  error:function(){
-    alert("ERROR");
-  }
+			    	//west
+			    	$.ajax({
+						type: 'GET',
+					  	dataType: 'jsonp',
+					  	jsonpCallback: 'callback',
+					  	url: westqueryurl,
+					  	data: { },
+					  	beforeSend:function(){
+					  	},
+					  	success:function(data){
+					    	renderSentiment(data, westMarkersList);
+					  	},
+					  	error:function(){
+					    	alert("ERROR");
+					  	}
+					});
+			  	},
+			  	error:function(){
+			    	alert("ERROR");
+			  	}
+			});
+	  	},
+	  	error:function(){
+	    	alert("ERROR");
+	  	}
+	});
 });
+
+var centerMarkersList = [];
+var eastMarkersList = [];
+var westMarkersList = [];
+function renderSentiment(tweets, markersList) {
+    if (markersList.length > 0) {
+        for (var i = 0; i < markersList.length; i++) {
+         	map.removeLayer(markersList[i]);
+        }
+    }
+    for (var i = 0; i< tweets.length; i++) {
+        var tweet = tweets[i];
+        if (tweet.score !== undefined) {
+            var markercolor = "#DC143C";
+            if (tweet.score == 0)
+             	markercolor = "#FFFACD";
+            else if (tweet.score > 0)
+             	markercolor = "#32CD32";
+
+            if (tweet.location) {
+             	var icon = L.MakiMarkers.icon({color: markercolor});
+             	var pin = L.marker([tweet.location.coordinates[0], tweet.location.coordinates[1]], {icon: icon});
+             	pin.bindPopup(tweet.text).addTo(map);
+             	markersList.push(pin);
+            }
+        }
+    }
+}
