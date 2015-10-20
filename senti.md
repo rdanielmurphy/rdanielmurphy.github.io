@@ -14,4 +14,4 @@ includeLeaflet: true
    	</span>
 </div>
 <br>
-<div id="map" style="height: 700px;"></div>
+<div id="map" style="height: 700px;"><div id="progress"></id></div>

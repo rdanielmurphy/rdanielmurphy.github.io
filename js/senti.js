@@ -15,6 +15,9 @@ $( "#runQueryBtn" ).click(function() {
 	var centerqueryurl = apicall + "center/" + search;
 	var westqueryurl = apicall + "west/" + search;
 
+	var spinner = new Spinner().spin();
+	$( "#progress" ).append(spinner.el);
+
 	//east
 	$.ajax({
 		type: 'GET',
@@ -49,20 +52,24 @@ $( "#runQueryBtn" ).click(function() {
 					  	beforeSend:function(){
 					  	},
 					  	success:function(data){
+					  		spinner.stop();
 					    	renderSentiment(data, westMarkersList);
 					  	},
 					  	error:function(){
-					    	alert("ERROR");
+					  		spinner.stop();
+					    	alert("There was an error.  Try a different search.");
 					  	}
 					});
 			  	},
 			  	error:function(){
-			    	alert("ERROR");
+			  		spinner.stop();
+			    	alert("There was an error.  Try a different search.");
 			  	}
 			});
 	  	},
 	  	error:function(){
-	    	alert("ERROR");
+	  		spinner.stop();
+	    	alert("There was an error.  Try a different search.");
 	  	}
 	});
 });
