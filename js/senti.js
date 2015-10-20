@@ -55,19 +55,19 @@ $( "#runQueryBtn" ).click(function() {
 					  		spinner.stop();
 					    	renderSentiment(data, westMarkersList);
 					  	},
-					  	error:function(){
+					  	error:function(jqxhr){
 					  		spinner.stop();
 					    	alert("There was an error.  Try a different search.");
 					  	}
 					});
 			  	},
-			  	error:function(){
+			  	error:function(jqxhr){
 			  		spinner.stop();
 			    	alert("There was an error.  Try a different search.");
 			  	}
 			});
 	  	},
-	  	error:function(){
+	  	error:function(jqxhr){
 	  		spinner.stop();
 	    	alert("There was an error.  Try a different search.");
 	  	}
