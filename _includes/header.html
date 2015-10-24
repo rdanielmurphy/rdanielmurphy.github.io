@@ -27,21 +27,16 @@
 {% endif %}
 
     <!-- Main Head Title -->
-    <div class="headingtitle">
-        {% if page.title %}<h2><span>{{page.title}}</span></h2>{% endif %}
-        <br>
-        {% if page.subtitle %}<h3><span>{{page.subtitle}}</span></h3>{% endif %}
-        <br>
-        {% if site.smalltalk %}<p>{{ site.smalltalk }}</p>{% endif %}   
-    </div>
+    {% if page.is_post %}
+    {% else %}
+        <div class="headingtitle">
+            {% if page.title %}<h2><span>{{page.title}}</span></h2>{% endif %}
+            <br>
+            {% if page.subtitle %}<h3><span>{{page.subtitle}}</span></h3>{% endif %}
+            <br>
+            {% if site.smalltalk %}<p>{{ site.smalltalk }}</p>{% endif %}   
+        </div>
+    {% endif %}
 </section>
 
 {% if page.imagedetails %}<div class="imagedetails">{{ page.imagedetails }}</div>{% endif %}
-
-
-
-
-
-
-
-

@@ -2,7 +2,7 @@
 layout: post
 title:  "Screen grabs with ADB"
 date:   2015-10-09 11:05:40
-backgroundpic: salt_flats_2.jpg
+backgroundpic: salt.jpeg
 imagedetails: Salt Flats, Uyuni, Bolivia
 categories: android
 ---

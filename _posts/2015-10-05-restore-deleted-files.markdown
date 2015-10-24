@@ -2,8 +2,8 @@
 layout: post
 title:  "Restoring deleted files in Android Studio"
 date:   2015-10-05 08:05:40
-backgroundpic: salt_flats_2.jpg
-imagedetails: Salt Flats, Uyuni, Bolivia
+backgroundpic: lapaz.jpeg
+imagedetails: La Paz, Bolivia
 categories: programming android
 ---
 
