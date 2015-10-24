@@ -5,6 +5,9 @@ date:   2015-09-15 21:54:21
 backgroundpic: bogota_city1.jpg
 imagedetails: Bogota, Colombia
 categories: travel
+excerpt: My thoughts on traveling and why I think everyone should travel and see the world.
+tags:
+- travel
 ---
 
 #Preface

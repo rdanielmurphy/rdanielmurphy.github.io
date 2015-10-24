@@ -4,7 +4,11 @@ title:  "New Jekyll powered blog!"
 backgroundpic: bogota_microsoft.jpg
 date:   2015-09-09 21:04:40
 imagedetails: Microsfot HQ, Bogota, Colombia
-categories: jekyll update blog
+categories: jekyll blog
+excerpt: First post!  Summary of purpose of this blog/new site and a link to the site's GitHub repo.
+tags:
+- jekyll
+- blog
 ---
 
 So now that I have some free time (unemployed and just returned from traveling), I think it's time to start working on my website and blog.

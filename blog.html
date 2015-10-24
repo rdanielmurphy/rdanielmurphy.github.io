@@ -1,31 +1,37 @@
 ---
 layout: page
 title: Blog
-backgroundpic: quepos.jpg
+backgroundpic: blog.jpg
 imagedetails: Public beach on Quepos, Costa Rica
 permalink: /blog/
 ---
 
-<!-- Start of the section post-loop-->
-<section class="post-loop container-fluid">
+<div style="padding-left: 5%;padding-right: 5%;">
     {% for post in site.posts %}
     <div class="row single-post">
         <div>
-            <h1 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-
-            <div class="post-details">
-                <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-
+          <div class="row">
+            <div class="col-sm-1" style="display:table !important; margin-top:10px;">
+                <div class="post-details">
+                    <span>{{ post.date | date: "%m/%d/%Y" }}</span>
+                </div>
             </div>
-
-            <p class="post-excerpt">
-                {{post.excerpt | length: 140 }}
-            </p>
-
-            <a class="post-button pi-big pi-retro pi-flat" href="{{ post.url }}">More</a>
-
+            <div class="col-sm-11" style="">
+                <h1 class="post-title" style="">
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h1>
+              <div class="row">
+                <div class="col-sm-12" style="">
+                    <p class="post-excerpt">
+                        {{post.excerpt | length: 140 }}
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
-
+    <br>
+    <br>
     {% endfor %}
-</section>
+</div>

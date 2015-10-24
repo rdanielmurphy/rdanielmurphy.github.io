@@ -5,6 +5,12 @@ date:   2015-09-10 12:04:40
 backgroundpic: bolivia_trains.jpg
 imagedetails: Abandoned Trains, Uyuni, Bolivia
 categories: jekyll digitalocean nginx blog
+excerpt: How I created this Jekyll blog
+tags:
+- jekyll
+- digitalocean
+- nginx
+- blog
 ---
 
 Here are the steps I went through, more or less, to build this blog.  

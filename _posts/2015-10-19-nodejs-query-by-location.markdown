@@ -5,6 +5,11 @@ date:   2015-10-19 15:29:45
 backgroundpic: potosi_dinosaur_tracks.jpeg
 imagedetails: Dinosaur Tracks Musuem, Potosi, Bolivia
 categories: nodejs mongodb javascript
+tags:
+- nodejs
+- mongodb
+- javascript
+excerpt: How I leveraged geosptial indexing in MongoDB to get documents within x meters of a specific location for my dating apps NodeJS backend.
 ---
 
 I've been slowly working on a dating app as a side project.  Android front end and NodeJs, Express, and Mongodb on the backend.  As with most dating apps, it needs to be able to filter the users by location.  Here's how I did it on the backend.

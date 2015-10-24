@@ -5,6 +5,10 @@ backgroundpic: santa_marta_tony_stark.jpg
 imagedetails: Tony Stark and I in Santa Marta, Colombia
 date:   2015-09-25 11:55:26
 categories: travel colombia
+excerpt: Long post about my travels in Colombia during August and September of 2015.   Broken down by categories such as Lodging, Money, Transportation, etc...
+tags:
+- travel
+- colombia
 ---
 
 #Introduction
