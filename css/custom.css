@@ -269,6 +269,254 @@
   font-family: "Monostate", sans-serif;
   font-weight: 200; }
 
+.section-header {
+  border-top: 4px solid #c7c7c7;
+  border-bottom: 2px solid #c7c7c7;
+  padding: .2rem 0 .4rem;
+  margin-bottom: 1.5rem; }
+  .section-header h2resume {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: -.05rem;
+    margin: 0; }
+
+.page-header {
+  padding: 1.5rem 0; }
+  .page-header .avatar {
+    width: 95px;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: block; }
+  .page-header .header-name {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 6rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: -.15rem;
+    line-height: 1;
+    margin: 1rem 0 2rem; }
+  .page-header .title-bar {
+    border-top: 4px solid #c7c7c7;
+    border-bottom: 2px solid #c7c7c7;
+    padding: .2rem 0 .4rem;
+    padding: .4rem 0; }
+    .page-header .title-bar:before {
+      display: table;
+      content: ""; }
+    .page-header .title-bar:after {
+      display: table;
+      clear: both;
+      content: ""; }
+    .page-header .title-bar .header-title {
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      font-size: 3rem;
+      line-height: 2rem;
+      letter-spacing: -.05rem;
+      text-align: center;
+      margin: 0 0 .5rem; }
+      @media (min-width: 600px) {
+        .page-header .title-bar .header-title {
+          float: left;
+          margin: 0; } }
+  @media (min-width: 600px) {
+    .page-header .executive-summary {
+      font-size: 1.725rem; } }
+
+.icon-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  top: 4px;
+  text-align: center;
+  border-top: 2px solid #c7c7c7;
+  padding-top: .4rem; }
+  @media (min-width: 600px) {
+    .icon-links {
+      float: right;
+      border-top: none;
+      padding-top: 0; } }
+  .icon-links .icon-link-item {
+    display: inline-block;
+    margin-left: 5px; }
+  .icon-links .icon-link {
+    display: inline-block; }
+    .icon-links .icon-link:hover .icon path {
+      fill: #333;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+
+.contact-button {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #efefef;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 1.5rem auto;
+  width: 220px;
+  font-size: 2.3rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #333;
+  line-height: 55px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .contact-button:hover {
+    background-color: #333;
+    color: #fff; }
+  .contact-button.not-looking {
+    width: 400px; }
+
+.content-section {
+  margin: 0 0 3rem; }
+  .content-section .resume-item {
+    margin-bottom: 2rem; }
+  .content-section .resume-item-title {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0 0 .75rem;
+    font-size: 1.75rem;
+    letter-spacing: -.05rem;
+    line-height: 1; }
+  .content-section .resume-item-details {
+    font-size: 1.225rem;
+    margin: 0 0 .75rem;
+    line-height: 1; }
+  .content-section .resume-item-title a,
+  .content-section .resume-item-details a,
+  .content-section .resume-item-copy a,
+  .content-section .resume-item-list a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid; }
+    .content-section .resume-item-title a:hover,
+    .content-section .resume-item-details a:hover,
+    .content-section .resume-item-copy a:hover,
+    .content-section .resume-item-list a:hover {
+      border-bottom: none;
+      color: #9c9c9c; }
+  .content-section .resume-item-copy {
+    margin: .75rem 0 0; }
+
+.page-footer {
+  border-top: 4px solid #c7c7c7;
+  padding-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem; }
+  .page-footer .footer-line {
+    margin: 0;
+    font-size: .875rem;
+    color: #999; }
+    .page-footer .footer-line > a {
+      font-weight: 700;
+      color: #333; }
+
+.container {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto; }
+  .container:before {
+    display: table;
+    content: ""; }
+  .container:after {
+    display: table;
+    clear: both;
+    content: ""; }
+
+.columns {
+  margin-right: -10px;
+  margin-left: -10px; }
+  .columns:before {
+    display: table;
+    content: ""; }
+  .columns:after {
+    display: table;
+    clear: both;
+    content: ""; }
+
+.column {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.one-third {
+  width: 33.333333%; }
+
+.two-thirds {
+  width: 66.666667%; }
+
+.one-fourth {
+  width: 25%; }
+
+.one-half {
+  width: 50%; }
+
+.three-fourths {
+  width: 75%; }
+
+.one-fifth {
+  width: 20%; }
+
+.four-fifths {
+  width: 80%; }
+
+.single-column {
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.table-column {
+  display: table-cell;
+  width: 1%;
+  padding-right: 10px;
+  padding-left: 10px;
+  vertical-align: top; }
+
+.wrapper:before,
+.wrapper:after {
+  content: "";
+  display: table; }
+
+.wrapper:after {
+  clear: both; }
+
+.wrapper {
+  max-width: 728px;
+  padding: 0 24px;
+  margin: 0 auto;
+  zoom: 1; }
+
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
+::-moz-selection {
+  background: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  text-shadow: none; }
+
 a {
   text-decoration: none !important; }
   a:hover {

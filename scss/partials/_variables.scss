@@ -8,3 +8,22 @@ $header-font-color:#fff;
 $post-title-size: 1.6em;
 $post-title-weight:900;
 $post-title-color:#777;
+
+$container-width: 980px !default;
+$grid-gutter:     10px !default;
+
+// Colors
+$white:             #fff;
+$black:             #333;
+
+// Styles
+$text_color:        $black;
+
+// Font stack
+$body-font: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+// The base body size
+$body-font-size: 13px !default;
+
+// Monospace font stack
+$mono-font: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
