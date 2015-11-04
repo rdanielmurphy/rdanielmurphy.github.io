@@ -1,13 +1,16 @@
 /*This is the header section styles*/
 .header {
   width: 100%;
-  height: 600px;
+  height: 900px;
   margin: 0 auto;
   padding: 0;
   display: table; }
   @media only screen and (max-width: 500px) {
     .header {
       height: 300px; } }
+  @media only screen and (max-width: 1600px) {
+    .header {
+      height: 600px; } }
   .header .sitenavbar {
     top: 0px;
     position: fixed;
