@@ -5,12 +5,15 @@
   margin: 0 auto;
   padding: 0;
   display: table; }
-  @media only screen and (max-width: 500px) {
+  @media screen and (max-width: 500px) {
     .header {
       height: 300px; } }
-  @media only screen and (max-width: 1600px) {
+  @media screen and (min-width: 501px) and (max-width: 1600px) {
     .header {
       height: 600px; } }
+  @media screen and (min-width: 1601px) {
+    .header {
+      height: 900px; } }
   .header .sitenavbar {
     top: 0px;
     position: fixed;
