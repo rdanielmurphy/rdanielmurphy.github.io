@@ -16,6 +16,7 @@
 <script>
 var SMALL_SCREEN = 500;
 var LARGE_SCREEN = 1000;
+var XTRALARGE_SCREEN = 1600;
 size = LARGE_SCREEN;
 
 window.onresize = function(event) {
@@ -25,14 +26,18 @@ window.onload = function(event) {
 	resizeBackground();
 }
 function resizeBackground() {
-	if (size == LARGE_SCREEN && window.innerWidth < SMALL_SCREEN) {
+	if (size != SMALL_SCREEN && window.innerWidth < SMALL_SCREEN) {
 		var url = $('#header').css("background-size", "100% 300px");
 		size = SMALL_SCREEN;
 	}
-	else if (size == SMALL_SCREEN && window.innerWidth > SMALL_SCREEN) {
+	else if (size != LARGE_SCREEN && window.innerWidth > SMALL_SCREEN && window.innerWidth < XTRALARGE_SCREEN) {
 		var url = $('#header').css("background-size", "100% 600px");
 		size = LARGE_SCREEN;
 	}
+    else if (size != XTRALARGE_SCREEN && window.innerWidth > XTRALARGE_SCREEN) {
+        var url = $('#header').css("background-size", "100% 900px");
+        size = XTRALARGE_SCREEN;
+    }
 }
 </script>
 
