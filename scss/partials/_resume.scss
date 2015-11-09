@@ -21,7 +21,7 @@
 .page-header { padding: 1.5rem 0;
 
   .avatar {
-    width: 95px;
+    width: 150px;
     max-width: 100%;
     overflow: hidden;
     @include border-radius(100px);
@@ -51,6 +51,7 @@
       line-height: 2rem;
       letter-spacing: -.05rem;
       text-align: center;
+      padding-top: 4px;
       margin: 0 0 .5rem;
 
       @include media_larger_than_mobile {
