@@ -290,7 +290,7 @@
 .page-header {
   padding: 1.5rem 0; }
   .page-header .avatar {
-    width: 95px;
+    width: 150px;
     max-width: 100%;
     overflow: hidden;
     -webkit-border-radius: 100px;
@@ -325,6 +325,7 @@
       line-height: 2rem;
       letter-spacing: -.05rem;
       text-align: center;
+      padding-top: 4px;
       margin: 0 0 .5rem; }
       @media (min-width: 600px) {
         .page-header .title-bar .header-title {
