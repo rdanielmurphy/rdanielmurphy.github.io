@@ -2,8 +2,8 @@
 layout: post
 title:  "Costa Rica"
 date:   2015-10-26 07:29:40
-backgroundpic: potosi_dinosaur_tracks.jpeg
-imagedetails: Dinosaur Tracks Musuem, Potosi, Bolivia
+backgroundpic: costa_rica_1.jpg
+imagedetails: Manuel Antonio National Park, Quepos
 categories: travel costarica
 excerpt: Long post about my travels in Costa Rica during August of 2015.
 tags:
@@ -14,17 +14,16 @@ tags:
 #Introduction
 I did a short 9 day tour of Costa Rica with a travel company called GAdventures.    I went about mid-way through my exploration of Colombia and I went with a tour company for a change of pace.  Since it was with GAdventures, it was always go-go, which was great because we only had 9 days.  Well more like 8 at most.  It was my second tour with GAdventures, first was in Bolivia in 2012.  
 
-Below are are the cities we went through:
+###Below are are the cities we went through: 
++ San Jose
++ La Fortuna
++ Monteverde
++ Quepos
 
-*San Jose
-*La Fortuna
-*Monteverde
-*Quepos
-
-##Things you must do:
-Manuel Antonio National Park in Quepos
-White Water Rafting (With Desafio Adventure Company.  Between San Jose and La Fortuna)
-Superman Ziplining and Tarzan Swing Bungee Jump in Monteverde (100% Aventura)
+###Things you must do:
++ Manuel Antonio National Park in Quepos
++ White Water Rafting (With Desafio Adventure Company.  Between San Jose and La Fortuna)
++ Superman Ziplining and Tarzan Swing Bungee Jump in Monteverde (100% Aventura)
 
 #Money
 Bring your US dollars!  They are good here!  But don’t expect to get any dead presidents back in change.  You will get the native currency, Colones, for your change.
@@ -49,13 +48,15 @@ For a Latin American country, English is spoken heavily.  Definitely not to say 
 Warm in San Jose for the most part.  Hot in Quepos.   Can get a little chilly in the mountains in Monteverde and La Fortuna.  It’s the rain forest so you can expect rain.
 
 #Food
-Rice and beans!  Ticos (what Costa Ricans call themselves) love to use those two basic variables in any dish.  Their healthy food combined with their active lifestyle is one reason why they are such a healthy and happy people.
+Rice and beans!  Ticos (what Costa Ricans call themselves) love to use those two basic variables in any dish.  Their healthy food combined with their active lifestyle is one reason why they are such a healthy and happy people.  
+
+There are plenty of options for food so if you aren't a rice and beans kind of person don't worry.  The best restuarant I went to was probably a Peruvian called Machu Picchu or something along those lines.  I had lunch at a Subway in San Jose that was more expensive than what I'd pay in the states (Costa Rica isn't exactly cheap).
 
 #Lodging
-Hostels are everywhere as well as decent hotels.  Never had any issues with places that I stayed at, accept WiFi reception at most places left a lot to be desired.  If you are visiting Costa Rica you shouldn’t be inside on Facebook or Netflix though anyways right?   Too much to do and see.  I didn’t stay at any Airbnb places but I know there is a big Airbnb market there.
+Hostels are everywhere as well as decent hotels.  Never had any issues with places that I stayed at, except WiFi reception at most places left a lot to be desired.  If you are visiting Costa Rica you shouldn’t be inside on Facebook or Netflix though anyways right?   Too much to do and see.  I didn’t stay at any Airbnb places but I know there is a big Airbnb market there.
 
 #Meeting people
-Hostels are the best places to meet fellow travelers and foreigners.  If you want to meet some Tico, dating apps are popular especially Tinder.  A cool bar in Monteverder called Bar Amigos is a really good place to meet fellow travelers and Ticos.  It’s really the only good bar in Monteverde.
+Hostels are the best places to meet fellow travelers and foreigners.  If you want to meet some Ticos or Ticas, dating apps are popular especially Tinder.  A cool bar in Monteverder called Bar Amigos is a really good place to meet fellow travelers and Ticos.  It’s really the only good bar in Monteverde.
 
 #Safety
 San Jose has it’s bad spots but you would never go near those neighborhoods.  Incredibly safe country especially for Latin America, your only concern should be avoiding being eaten by an croc or drowning in the ocean (there are no life guards every 100 feet like we have in the states).
