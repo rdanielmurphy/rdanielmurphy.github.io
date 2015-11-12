@@ -62,4 +62,6 @@ Hostels are the best places to meet fellow travelers and foreigners.  If you wan
 San Jose has it’s bad spots but you would never go near those neighborhoods.  Incredibly safe country especially for Latin America, your only concern should be avoiding being eaten by an croc or drowning in the ocean (there are no life guards every 100 feet like we have in the states).
 
 #Conclusion
-Ticos are often said to be the happiest people in the world and it’s easy to see why.   Beautiful beaches, great weather year round, rainforests to explore, a stunning array of wildlife, eco-friendly, and even a stable economy, the list goes on and on.  A country everyone should visit at least once.  If you haven’t gone, you need to go. 
+Ticos are often said to be the happiest people in the world and it’s easy to see why.   Beautiful beaches, great weather year round, rainforests to explore, a stunning array of wildlife, eco-friendly, and even a stable economy, the list goes on and on.  A country everyone should visit at least once.  If you haven’t gone, you need to go.   
+
+Oh, and Pura Vida!

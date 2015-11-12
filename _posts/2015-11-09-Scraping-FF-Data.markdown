@@ -187,7 +187,54 @@ driver.quit();
 {% endhighlight %}
 <br>
 
-## Step 5 - Conclusion
+## Step 5 - Output
+Screenshot of data on ESPN:
+<br>
+<img src="/img/espn.png" alt="espn" style="width:70%">
+
+<br>
+
+Output of program:
+{% highlight html %}
+QB
+------------------------
+Saints vs QB surrender on average 23.7 fantasy points
+Ravens vs QB surrender on average 21.5 fantasy points
+Lions vs QB surrender on average 19.1 fantasy points
+Raiders vs QB surrender on average 18.9 fantasy points
+Buccaneers vs QB surrender on average 18.8 fantasy points
+Giants vs QB surrender on average 18.2 fantasy points
+Browns vs QB surrender on average 18.0 fantasy points
+Jaguars vs QB surrender on average 17.9 fantasy points
+Bears vs QB surrender on average 17.6 fantasy points
+Texans vs QB surrender on average 17.6 fantasy points
+49ers vs QB surrender on average 17.3 fantasy points
+Titans vs QB surrender on average 17.1 fantasy points
+Colts vs QB surrender on average 16.9 fantasy points
+Dolphins vs QB surrender on average 16.9 fantasy points
+Steelers vs QB surrender on average 16.8 fantasy points
+Chargers vs QB surrender on average 16.8 fantasy points
+Packers vs QB surrender on average 16.8 fantasy points
+Bills vs QB surrender on average 16.4 fantasy points
+Redskins vs QB surrender on average 16.3 fantasy points
+Chiefs vs QB surrender on average 16.1 fantasy points
+Patriots vs QB surrender on average 16.0 fantasy points
+Jets vs QB surrender on average 15.1 fantasy points
+Eagles vs QB surrender on average 15.0 fantasy points
+Panthers vs QB surrender on average 14.8 fantasy points
+Cowboys vs QB surrender on average 14.5 fantasy points
+Bengals vs QB surrender on average 14.3 fantasy points
+Vikings vs QB surrender on average 13.9 fantasy points
+Cardinals vs QB surrender on average 13.9 fantasy points
+Falcons vs QB surrender on average 13.8 fantasy points
+Seahawks vs QB surrender on average 13.3 fantasy points
+Rams vs QB surrender on average 11.5 fantasy points
+Broncos vs QB surrender on average 9.3 fantasy points
+{% endhighlight %}
+
+<br>
+
+## Conclusion
 Check out the full source on [GitHub][github]
 
 
