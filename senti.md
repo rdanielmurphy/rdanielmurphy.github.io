@@ -28,7 +28,9 @@ To improve the tool, more social media platforms could be leveraged.  Currently 
    	</span>
 </div>
 <br>
-<div id="map" style="height: 700px;"><div id="progress"></id></div>
+<div id="map" style="height: 700px;">
+    <div id="progress"></div>
+</div>
 
 <br>
 <br>

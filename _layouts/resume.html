@@ -25,7 +25,8 @@
         </div>
 
         <div class="executive-summary">
-          <p> I do full stack development.  My areas of expertise are building/consuming RESTful APIs, 2D/3D geotemporal visualizations, object-oriented programming, and delivering superb UX on Windows Desktop, Web, and Android.</p>
+          <p> I do full stack web development.  My areas of expertise are building/consuming RESTful APIs, 2D/3D geotemporal visualizations, object-oriented programming, and delivering superb UX on web, Android, and Windows.</p>
+          <p>I've many languages and technologies over the years but my weapons of choice tend to be: React or Angular, NodeJS, MongoDB or Elastic Search, Webpack, and Docker.</p>
         </div>
 
         <a href="mailto:rdanielmurphy@gmail.com" class="contact-button">Contact me</a>
@@ -39,11 +40,44 @@
           <h2resume>Experience</h2resume>
         </header>
 
+
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Unisys</h3>
+          <h4 class="resume-item-details">Software Engineer &bull; January, 2017 &mdash; Present</h4>
+          <p class="resume-item-copy">
+            <ul class="resume-item-list">
+              <li>Contracted to CBP as a full stack web developer.</li>
+              <li>Created a responsive Angular 4 web app which handles credit card payments and searching/viewing receipts.</li>
+              <li>Updated an existed Dojo web app with new functionality and refactored existing codebase into AMD modules. Added a build process to minify and combine files for increased performance. Implemented more efficient cache busting mechanism.</li>
+              <li>Made updates to Java REST API backend endpoints.</li>
+            </ul>
+          </p>
+        </div><!-- end of resume-item -->
+
+        <!-- another resume item -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Atlasly</h3>
+          <h4 class="resume-item-details">Owner &bull; January, 2017 &mdash; Present</h4>
+          <p class="resume-item-copy">
+            <ul class="resume-item-list">
+              <li>Supported a client’s existing Cesium.js geospatial temporal application and added new features using Angular.js and D3. Managed deployments and services on AWS.</li>
+              <li>Worked with a client to develop their Angular 4 application. Built app with Webpack and deployed to Digital Ocean. Setup a Cloud DataStore service on the Google Cloud Platform.</li>
+            </ul>
+          </p>
+        </div><!-- end of resume-item -->
+          
+        <!-- another resume item -->
         <div class="resume-item">
           <h3 class="resume-item-title">Patrocinium Systems</h3>
           <h4 class="resume-item-details">UX Developer &bull; October, 2015 &mdash; Present</h4>
-          <p class="resume-item-copy">Lead full stack developer on a 3D temporal geospatial web application using CesiumJS, D3, AngularJS, Leaflet, and Bootstrap on the frontend.  NodeJS and ExpressJS on the backend, and ElasticSearch was the datastore. Connected to S3 to save/load assets. Managed a small team to meet short deadlines.  I was responsible of deploying/maintaining applications on AWS with EB</p>
+          <p class="resume-item-copy">
+            <ul class="resume-item-list">
+              <li>Lead full stack developer on a 3D geospatial and temporal web application using CesiumJS, D3, AngularJS, Bootstrap, Node.js, Hapi.js, and ElasticSearch as the datastore. Connected to S3 to save/load assets. Managed a small team to meet short deadlines.</li>
+              <li>Responsible for deploying/maintaining the application on AWS with Elastic Beanstalk.</li>
+              <li>Developed a patent for emergency visualizations methods in which the application is based on.</li>
+            </ul>
+          </p>
         </div><!-- end of resume-item -->
 
         <!-- another resume item -->
@@ -66,10 +100,11 @@
           <h4 class="resume-item-details">Software Developer &bull; May, 2009 &mdash; March, 2014</h4>
           <p class="resume-item-copy">
             <ul class="resume-item-list">
-              <li>Web app development using PHP which analyzed cancer statistics</li>
-              <li>Used C, C++, and C++/CLI to build and maintain many small cancer research programs</li>
-              <li>Used Java to build several cancer data analyisis applications which leveraged libraries such as Jasper Reports and Lucene as well as Groovy scripting.  Used Swing for the UI and JUnit to test</li>
-              <li>Added threading using the threading library in the C+11 standard to a C++ program that calculates best fit lines</li>
+              <li>Developed a C++.NET application to read/visualize cancer records.</li>
+              <li>Designed and developed a Java swing program for searching a drug database using Lucene.</li>
+              <li>Developed a Java swing application that enabled creating/editing/executing of Groovy scripts for analyzing cancer research data.</li>
+              <li>Worked on a compiler that compiled a C like language into Groovy using JFlex and CUP.</li>
+              <li>Added threading to a C++ program that calculates best fit lines for cancer data which increased the throughput of the application up to 300%.</li>
             </ul>
           </p>
         </div><!-- end of resume-item -->
@@ -88,6 +123,26 @@
           <h3 class="resume-item-title">Towson University</h3>
           <h4 class="resume-item-details">Bachleor's Degree, Computer Science &bull; 2006 &mdash; 2009</h4>
           <p class="resume-item-copy">Minor in Math</p>
+        </div>
+
+      </section>
+      <!-- end Education -->
+
+      <!-- begin Awards/Patents -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2resume>Awards/Patents</h2resume>
+        </header>
+
+        <div class="resume-item">
+          <p class="resume-item-copy">
+            <ul class="resume-item-list">
+              <li>Second place  in an mobile app contest run by SBA in 2011.</li>
+              <li>First place  at the 2013 Health Hack DC.</li>
+              <li>Interactive emergency visualization methods. <a href='https://patents.google.com/patent/US9794755B1/en?oq=9794755'>Patent No: US 9794755 B1. Oct. 17, 2017</a></li>
+            </ul>
+          </p>
         </div>
 
       </section>
@@ -118,14 +173,6 @@
               </div>
            </li>
            <li>
-              <span class="caption-skill">C++/CLI</span>
-              <div class="progress">
-                 <div class="progress-bar" style="width: 90%">
-                    <span>90% </span>
-                 </div>
-              </div>
-           </li>
-           <li>
               <span class="caption-skill">C++</span>
               <div class="progress">
                  <div class="progress-bar" style="width: 80%">
@@ -136,7 +183,7 @@
            <li>
               <span class="caption-skill">C#</span>
               <div class="progress">
-                 <div class="progress-bar" style="width: 70%">
+                 <div class="progress-bar" style="width: 65%">
                     <span>70% </span>
                  </div>
               </div>
@@ -144,32 +191,8 @@
            <li>
               <span class="caption-skill">C</span>
               <div class="progress">
-                 <div class="progress-bar" style="width: 65%">
+                 <div class="progress-bar" style="width: 60%">
                     <span>65% </span>
-                 </div>
-              </div>
-           </li>
-           <li>
-              <span class="caption-skill">Groovy</span>
-              <div class="progress">
-                 <div class="progress-bar" style="width: 65%">
-                    <span>65% </span>
-                 </div>
-              </div>
-           </li>
-           <li>
-              <span class="caption-skill">Python</span>
-              <div class="progress">
-                 <div class="progress-bar" style="width: 40%">
-                    <span>40% </span>
-                 </div>
-              </div>
-           </li>
-           <li>
-              <span class="caption-skill">PHP</span>
-              <div class="progress">
-                 <div class="progress-bar" style="width: 30%">
-                    <span>30% </span>
                  </div>
               </div>
            </li>
@@ -214,26 +237,10 @@
         <h4>Other Tech/Frameworks/Tools</h4>
         <ul class="list-unstyled list-skills">
            <li>
-              <span class="caption-skill">AngularJs</span>
+              <span class="caption-skill">Angular</span>
               <div class="progress">
                  <div class="progress-bar" style="width: 90%">
                     <span>90% </span>
-                 </div>
-              </div>
-           </li>
-           <li>
-              <span class="caption-skill">Android Development</span>
-              <div class="progress">
-                 <div class="progress-bar" style="width: 80%">
-                    <span>80% </span>
-                 </div>
-              </div>
-           </li>
-           <li>
-              <span class="caption-skill">.NET framework</span>
-              <div class="progress">
-                 <div class="progress-bar" style="width: 80%">
-                    <span>80% </span>
                  </div>
               </div>
            </li>
@@ -262,7 +269,15 @@
               </div>
            </li>
            <li>
-              <span class="caption-skill">Gulp</span>
+              <span class="caption-skill">Android Development</span>
+              <div class="progress">
+                 <div class="progress-bar" style="width: 70%">
+                    <span>80% </span>
+                 </div>
+              </div>
+           </li>
+           <li>
+              <span class="caption-skill">Webpack</span>
               <div class="progress">
                  <div class="progress-bar" style="width: 70%">
                     <span>70% </span>
@@ -270,9 +285,17 @@
               </div>
            </li>
            <li>
+              <span class="caption-skill">React</span>
+              <div class="progress">
+                 <div class="progress-bar" style="width: 60%">
+                    <span>80% </span>
+                 </div>
+              </div>
+           </li>
+           <li>
               <span class="caption-skill">D3</span>
               <div class="progress">
-                 <div class="progress-bar" style="width: 70%">
+                 <div class="progress-bar" style="width: 50%">
                     <span>70% </span>
                  </div>
               </div>
@@ -282,22 +305,6 @@
               <div class="progress">
                  <div class="progress-bar" style="width: 30%">
                     <span>30% </span>
-                 </div>
-              </div>
-           </li>
-           <li>
-              <span class="caption-skill">HapiJs</span>
-              <div class="progress">
-                 <div class="progress-bar" style="width: 30%">
-                    <span>30% </span>
-                 </div>
-              </div>
-           </li>
-           <li>
-              <span class="caption-skill">Grunt</span>
-              <div class="progress">
-                 <div class="progress-bar" style="width: 20%">
-                    <span>20% </span>
                  </div>
               </div>
            </li>

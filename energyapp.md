@@ -5,23 +5,17 @@ permalink: /projects/energy_app.html
 backgroundpic: wood.jpg
 ---
 
-##Backstory
+# Backstory
 This app was created for a Energy.gov hackathon.  Not sure what every happened with the hackathon, I don't think they ever sent out the results.  Anyways I used a simple native Android chart library for the charts and used Google charts for the interactive map of the US.  Since that is a solution meant for Web apps and not for Native Android, I had to wrap it all in a WebKit component.  Think it worked out well so I've kept it on the App store for now.
 
-##Features
+# Features
 * Displays energy data taken from the EIA dataset and displays the data in heat maps and charts. Use this to see how much states create and consume certain types of energy.
 
 
-###Heatmap
+## Heatmap
 <img src="/img/energyapp/mapenergy.png" alt="heatmap" style="max-width: 50%;"/>
 <br>
 
-###Chart
+## Chart
 <img src="/img/energyapp/chartenergy.png" alt="chart" style="max-width: 50%;"/>
 <br>
-
-##Download
-<a href="https://play.google.com/store/apps/details?id=com.rdanielmurphy.EnergyApp">
-  <img alt="Get it on Google Play"
-       src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
-</a>

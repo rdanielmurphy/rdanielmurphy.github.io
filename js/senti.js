@@ -2,10 +2,8 @@
 
 var map = L.map('map').setView([37.09024, -95.712891], 4);
 
-L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/{type}/{z}/{x}/{y}.{ext}', {
-      type: 'map',
-      ext: 'jpg',
-      subdomains: '1234'
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 $( "#runQueryBtn" ).click(function() {
@@ -18,8 +16,11 @@ $( "#runQueryBtn" ).click(function() {
 	var westqueryurl = apicall + "west/" + search;
 
 	var spinner = new Spinner().spin();
-	$( "#progress" ).append(spinner.el);
-
+	//$( "#progress" ).append(spinner.el);
+    
+    alert("Returning soon...");
+    
+    /*
 	//east
 	$.ajax({
 		type: 'GET',
@@ -73,7 +74,7 @@ $( "#runQueryBtn" ).click(function() {
 			  	}
 			});
 	  	}
-	});
+	});*/
 });
 
 var centerMarkersList = [];
