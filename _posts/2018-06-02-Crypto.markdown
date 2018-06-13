@@ -1,0 +1,143 @@
+---
+layout: post
+title:  "My take on the future of Bitcoin and cryptocurrency"
+date:   2018-06-02 12:31:43
+backgroundpic: mexico1.jpg
+imagedetails: Belles Artes, Mexico City, Mexico
+categories: cryptocurrency
+excerpt:  First Bitcoin post.  My take on the current state of cryptocurrency space and how we go forward from here
+tags:
+- Bitcoin
+- cryptocurrency
+- blockchain
+---
+
+Everyone is talking about Bitcoin these days, as well as other cryptocurrencies.  At least it seems like.  Personally I've met a surprising amount of people that still haven't heard of the technology.  Of course the underlying technology we are ultimately talking about here is **blockchain or Distributed Ledger Technologies (DLT) to be more exact**.  
+
+Below I'll give my thoughts on the current state of space and take a chance in predicting the future.  But if you came here just for price predictions, I'll save you some time and let you know now, that's not the point of this blog post.  Just talking about the tech here, **no prices**!
+
+This will be a mix of high level and some low level concepts without getting too deep in the weeds.  That way no one gets lost or bored.
+
+## How it all started (Bitcoin)
+It all started with a [whitepaper](https://bitcoin.org/bitcoin.pdf) written by Satoshi Nakamoto in late 2008.  I recommend everyone read it **before** investing in cryptocurrency.  
+
+Before Bitcoin there had been many attempts at digital cash and digital gold.  But none worked because they all were centralized and required trust in a small number of individuals.  Many were hacked.  Bitcoin fixed this through it's innovative solution of a decentralized immutable ledger technology called a **blockchain**.  
+
+This is why **decentralization is everything**.  More on that below.
+
+## What came next
+The success of Bitcoin spawned many imitators.  This is natural and expected because of Bitcoin's open source nature.  It's very easy to fork (make a copy basically) of the Bitcoin codebase and create your own coin.  This is what Litecoin and others essentially did, with only a few small tweaks.
+
+Some of the tweaks coins implemented to set themselves apart:
+* Max number of coins, if any at all (Bitcoin has max 21 million)
+* More smart contract features (Bitcoin has limited smart contracts)
+  * Examples: Ethereum, Neo, Cardano, EOS, etc...
+* Different consensus mechanisms (Bitcoin is Proof of Work or PoW)
+  * Proof of Stake (PoS)
+  * Proof of Space/Proof of Capacity (PoSpace, PoC)
+  * Proof of Importance (PoI)
+* More privacy (Bitcoin is only pseudo anonymous)
+* Bigger blocks (Bitcoin in ~2MB more or less)
+* Different mining algorithms (SHA256 for Bitcoin)
+  * Equihash, Ethash, etc...
+* Distribution of coins (Block rewards for Bitcoin)
+  * Airdrops
+  * ICOs
+  * And whatever the hell Ripple is doing
+* And many more...
+
+So now almost 10 years later, we have thousands of coins and hundreds of billions of dollars in total market cap in the space.  Some people have been making money hand over fist.  Looking at the recent trends one could argue the following conclusions:
+* Blockchain will solve all the world's problems!
+* The original Bitcoin is slowly losing market share because it's old tech.  Out with the old in with the new!
+
+Well...
+
+## Here's the bad news
+Even though things are looking amazing right now in crypto, in my opinion, **most of this isn't all it's cracked up to be**.  There are a lot of projects worth a billion or more that have major scaling and use case issues, not to mention vulnerabilities that could be compromised with [less than a few grand](https://www.crypto51.app).  
+
+### Why some of these new coins aren't so great
+Above I showed some new features/"improvements"/changes being made in some coins that while are innovative, have yet to be proven.  And there's a reason why some of these new ideas have yet to be implemented in the original Bitcoin.   For example:
+
+* Turing complete programmable smart contracts: 
+  * Security (See DAO Ethereum attack)
+  * If there's a bug it can't easily be fixed because of the immutability properties
+  * Overhyped (See below)
+* Consensus algorithms other than PoW
+  * PoS: Still hasn't been solved without looking like a fairly centralized network.  Ethereum would implement this first and even they haven't switched yet.  Same with Delegated PoS (DPoS).
+  * PoSpace, PoC, PoI:  Doesn't really makes sense for Bitcoin.  Also all roads look to lead to centralization.
+* More privacy:  More privacy makes transactions bigger so less transactions in a block.  So less transactions per second on the network overall.  It's a scaling issue.
+* Bigger blocks: While this in theory would improve transactions per second on the network, bigger blocks means more hard drive space for nodes on the network, which tends to lead to centralization.  Also Bitcoin would need 1GB+ blocks to scale to VISA's transactions per second.  Sending 1GB blocks over the network just wouldn't work right now.
+
+Some of the other changes we've seen in coins like different hashing algorithms or max limits on number of coins are fine but there's no need for Bitcoin to changes those at the moment.
+
+<br>
+
+### And why these new coins are doomed to fail
+There are a couple simple reasons why some of these coins are doomed to fail.
+
+**Coins have no purpose**
+Not every project these days needs a coin with it.  Most of these are scams that sell you a coin that will supposedly be used for something in the future.  But in the end the money raised from the ICO will just be pocketed or used to improved the product they are working on which never required a coin in the first place.  These coins will be worth 0 in time.  No thank you [imigize](https://imigize.io).
+
+**Centralized**
+Centralized systems can be easily hacked or censored by governments.  And you are trusting your hard earned money in hands of just a few.  Ripple is an example of this.  Ripple could decide tomorrow to sell the rest of it's coins in escrow and even create some out of thin air.  These types of coins will be phased out eventually once decentralized coins scale a little better.
+
+**Lack of Network affect**
+PoW is the only proven method of securing a public decentralized blockchain.  Other consensus algorithms tend to lead to centralization.  And like we said earlier **decentralization is everything**, so these non-PoW coins are doomed to fail.  Or at least ultimately not be worth much in total market cap.
+
+Now that we got that out of the way, we can look at [crypto51](https://www.crypto51.app) again to see why network effect is so important for PoW coins.  The more nodes and the better hash rate on the network, the more resistant these coins are to hacks (double spends in this case).  If a coin can be easily hacked, it's value is essentially 0.  Notice how Bitcoin is far and away the leader in security.
+
+<br>
+
+### Are smart contracts overhyped?
+Basic smart contracts implemented in Bitcoin make sense.  What doesn't make sense is Turing complete programmable smart contracts that require some oracle to determine the result.  For example, a smart contract that depends on the weather.  Or a smart contract that depends on the result of a sporting event.  How does a smart contract know the result?  It depends on a "trusted" oracle, basically **a trusted 3rd party**.  That's centralization that doesn't make a lot of sense because it **defeats the purpose of the decentralized blockchain**.  See Augur as an example.
+
+Another example is deeds to land on a blockchain.  At the end of the day you still have a physical real world asset that while could be represented as a token on a blockchain, still needs to be transferred in the real world.  How do we verify that the new owners of the land have moved in and the old owners moved out?  A trusted 3rd party.  What if the owners lose their private key and therefore lose the ability to transfer the land?  Land is stuck forever in limbo on the blockchain unless a trusted 3rd party steps in.  We don't need a blockchain for this.  
+
+<br>
+
+### Let's talk about scaling
+**Blockchain technology doesn't scale**.  All current solutions to scaling like big blocks or master nodes or PoS/DPoS all lead to centralization.  In my opinion keeping the base layer of the blockchain as decentralized as possible is critical.  We want to avoid 51% attacks and to be censorship resistant.  This means keeping blocks small enough so anyone can run a node on their laptop and using PoW to secure the network.
+
+This is why I prefer 2nd layer or off-chain scaling.  The lightning network protocol is the most popular 2nd layer scaling tactic at the moment.  I call these tactics because I'm not sure at the moment there will be one universal solution to scaling.
+But lightning network is perfect for reoccurring transactions (monthly car payment for example).  Perhaps this can even be extended to your daily cup of coffee.  The goal here is to not have every transaction on the blockchain as that clogs up the blocks leading to higher fees and slower transaction times.  This can help keep the blocks small.
+
+<br>
+
+## Bitcoin vs Bitcoin Cash
+It's a confusing world to newbies of cryptocurrency ever since the hard fork of Bitcoin (BTC) to Bitcoin Cash (BCH).  Many proponents of BCH want to make everyone believe Bitcoin Cash is the real Bitcoin.  It's not a scam, it's a legit project that is trying to do on-chain scaling instead of 2nd layer scaling (see lightning network protocol above).  BCH believes every cup of coffee transaction should be in the main blockchain.  Of course the only way to do this is bigger blocks.  At the time of writing I believe they are at 32mb.  
+
+Bitcoin is aiming to be more of a store of value while Bitcoin Cash aims to be a medium of exchange.  **Both are currently horrible stores of value and useless as mediums of exchange**.  This is because of the unpredictable and wild price fluctuations.  Bitcoin is a gamble more than a store of value and no useful currency the fluctuates wildly in value.  No merchant wants to take a coin that could go down 10% tomorrow and users will HODL the coin if they think it will go up 50% within 6 months.
+
+I see Bitcoin as a possible store of value in time, but only a decentralized stable coin will be a useful medium of exchange.  That doesn't exists quite yet, closest thing being centralized stable coins like USD Tether.  And no one gets too excited about stable coins because there's no money to be made ;)
+
+<br>
+
+## Who is Satoshi Nakamoto?
+No one knows if it was one person or a group of people.  Everyone has their own guesses.  One thing for sure is that it is **NOT** this guy:
+
+![Craig Wright](https://i.guim.co.uk/img/media/3f84497bc9de67b670c7e67e2fe32c2cab139a42/0_0_1436_862/1436.jpg?w=300&q=55&auto=format&usm=12&fit=max&s=c75d73160542e733135b09e9574f9003 "Craig Wright")
+###### (Craig Steven Wright)
+
+The beauty of Bitcoin is that **we don't know who created it and that's actually a good thing**, hopefully we will never know.
+Satoshi Nakamoto does not control the source code or the ecosystem.  You are I have just as much control over Bitcoin as Satoshi.  
+
+<br>
+
+## The future and why I prefer Bitcoin
+I believe Bitcoin is the closest thing to a sure bet in the blockchain space and I think it will remain that way for the foreseeable future.  Everything in this space is still in the early stages.  If you think the Internet is a good historical analogue for blockchain technology, then most experts seem to say it's the early-mid 90s.  Though because of the ICO bubble, seems to me more like the late 90s to me.  So things are changing, and coins will come and go.
+
+While most coins these days have whitepapers that read like marketing slide decks, Bitcoin has real time tested technology behind it backed by proven mathematical principles and some of the best developers working on it.   Oh and it's an implementation of a technology from a whitepaper that is you know, an actual scientific whitepaper.  We've seen it's by far the most secure coin because of it's resistance to 51% attack and it's the most decentralized because of the number of nodes.  And as I've said, smart contracts are a little overhyped.  
+
+**How I see the future playing out in cryptocurrency and Bitcoin:**
+
+* Crytocurrency will become more and more common as a payment option for web/mobile apps.  It's just so easy to add because it requires no 3rd party and it's fast.
+* Atomic swapping of Bitcoin to other coins, particular stable coins, will lead to more adoption.  Merchants are more likely to accept cryptocurrency if less stable priced coins can be easily swapped for more stable coins.
+* Normal people don't want to be their own banks.  Banks will start moving into the business of helping secure your cryptocurrency.
+* Governments will start to create their own cryptocurrencies.
+* Ultra secure hardware that holds cryptocurrency and yet never exposes the private keys will be popular as a "cash" option for cryptocurrency.  See [OPENDIME](https://opendime.com/).
+* Up to 99% of current coins will be worth 0.  Bitcoin will get stronger.
+* Cash will slowly disappear.  We already see this in Asia with WeChat Pay.  More and more restaurants are not taking cash for many reasons, one being that it's safer.  Enter digital currencies...
+
+I don't believe fiat currency is going away any time soon, but I believe that it's important to have the option to use a currency that offers monetary sovereignty.  This is what cryptocurrencies can offer and why it's so groundbreaking.  And why it's not going anywhere.  
+
+So call me bullish long term on Bitcoin and skittish on anything else currently, but that could and probably will change over time.
