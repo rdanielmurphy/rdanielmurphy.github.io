@@ -1,0 +1,17 @@
+---
+title: "Restoring Deleted Files in Android Studio"
+date: "2015-10-05"
+excerpt: "Accidentally deleted a file in Android Studio or IntelliJ that you didn't commit? Here's how to fix the error of your ways."
+---
+
+I recently deleted a Java class from an Android application I was working on in Android Studio while refactoring the packages. I was deleting classes I no longer needed when I accidentally deleted one I did in fact need! No worries though, everything is backed up on git right? Well while the file was in fact backed up in source control, it had been heavily modified and the changes uncommitted. Sure I could restore it through git, but then I'd lose all my changes that I didn't commit yet.
+
+Ever had that issue before? Well luckily there's a solution. At least if you are working in IntelliJ or Android Studio.
+
+Right click on your **Project**. Go down to **Local History** and then to **Show History**.
+
+It will take a while to load, don't be worried when it says "History is empty". Eventually it will fill the list of history.
+
+Find the file in the list. Order is most recent to least. Click revert on the file and voilà!
+
+Saved me a lot of pain and heartache when I figured this out.
