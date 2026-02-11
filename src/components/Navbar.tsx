@@ -19,6 +19,13 @@ export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(href);
+  };
+
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
@@ -33,7 +40,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               className={`px-3 py-2 rounded-lg text-sm transition-colors ${
-                pathname === l.href
+                isActive(l.href)
                   ? "text-brand-500 bg-brand-50 dark:bg-brand-500/10"
                   : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
               }`}
@@ -75,7 +82,7 @@ export default function Navbar() {
                   href={l.href}
                   onClick={() => setOpen(false)}
                   className={`block px-3 py-2 rounded-lg text-sm ${
-                    pathname === l.href
+                    isActive(l.href)
                       ? "text-brand-500 bg-brand-50 dark:bg-brand-500/10"
                       : "text-gray-600 dark:text-gray-400"
                   }`}
