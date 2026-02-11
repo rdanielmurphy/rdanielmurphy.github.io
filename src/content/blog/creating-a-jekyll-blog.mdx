@@ -1,0 +1,45 @@
+---
+title: "Creating a Jekyll Blog!"
+date: "2015-09-10"
+excerpt: "How I created this Jekyll blog on Digital Ocean with Nginx."
+---
+
+Here are the steps I went through, more or less, to build this blog.
+
+## Tech Stack
+
+The tech stack here is pretty simple: Digital Ocean droplet, Nginx web server, and Jekyll.
+
+## Digital Ocean
+
+First step is to set up your Digital Ocean account. Now if you don't have a Digital Ocean account, let me know and I'll send you my code 😉 Free money for both of us.
+
+I used a $5 a month droplet with a Ubuntu distribution.
+
+After that you should follow the 3 part guide on connecting to your droplet with ssh [here](https://www.digitalocean.com/community/tutorials/how-to-connect-to-your-droplet-with-ssh).
+
+Second step, now that you are connected to your droplet over ssh, install [Nginx](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-12-04-lts-precise-pangolin) and Git.
+
+## Jekyll Blog and Git
+
+Third step is to start building your Jekyll blog locally ([tips](http://jekyllrb.com/docs/quickstart/)), push it to a [git](http://classic.scottr.org/presentations/git-in-5-minutes/) repo like [GitHub](https://help.github.com/articles/creating-a-new-repository/) or [Bitbucket](https://confluence.atlassian.com/bitbucket/create-a-repository-221449521.html), then make it automatically push to your digital ocean server at the same time using git post-receive hooks [here](https://www.digitalocean.com/community/tutorials/how-to-deploy-jekyll-blogs-with-git).
+
+After all of this I got an error from the server when I tried to push. This was the error:
+
+```bash
+remote: jekyll 2.5.3 | Error:  Permission denied @ dir_s_mkdir - /var/www/yourblogdirectory/meta/2012
+```
+
+To fix that I just changed the read/write permissions of the directory. Not the ideal solution but it works for now:
+
+```bash
+sudo chmod -R 777 /var/www/yourblogdirectory
+```
+
+## That's It!
+
+To create blog posts you create files in the _posts folder [tips](http://jekyllrb.com/docs/posts/) and write the posts using [Markdown](http://daringfireball.net/projects/markdown/).
+
+For styling, you might want to use the [Jekyll themes](http://jekyllthemes.org/) site to get a decent style to start with that you can configure later.
+
+Let me know if you followed this guide and it didn't work for you. I probably missed something!

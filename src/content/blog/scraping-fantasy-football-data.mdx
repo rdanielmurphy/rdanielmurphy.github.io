@@ -1,0 +1,179 @@
+---
+title: "Scraping Fantasy Sports Data with Java and Selenium"
+date: "2015-11-09"
+excerpt: "How I used Selenium to scrape fantasy football data from ESPN."
+---
+
+# Introduction
+
+Like just about everyone else, I've started to get interested in the world of DFS (Daily fantasy sports). Seems like a good alternative to online poker, though I'm convinced there's more variance in DFS so it will be harder to consistently win. Either way, the more data you can have at your fingertips, the better you should be able to make decisions. So I've been looking into APIs that can deliver me data, unfortunately I haven't found any good free ones (if any free ones). There do appear to be some extensive fantasy sports APIs but you will need to pay up (~$1,000+ a month).
+
+So since that's a little out of reach for me, I don't see why I can't just scrape that data (most of it is public) and store it for myself. My first target was to get the points against data for fantasy football. One of the most important stats for judging who to start and who to sit on your fantasy roster. Armed with just this data and a player's average fantasy output per week, you should at least break even as a DFS player, if not make a little money.
+
+## Step 1 - Go to website and look at source
+
+Go to your preferred fantasy sports data website and on the page that has a table of data you want to scrape, take a look at the source and check the id field on the table. For example the id of the table we want is "playertable_0". That is the same for the QB table as it is for the RB table and etc... It will be different for every site. Some sites might not even set an id on the table, that's where things will get a little trickier but you can still find the table with Selenium (it's a wonderful tool).
+
+For this tutorial we will assume you have an id for the table. Next step I did was create a Java project that imports the Selenium library via Gradle.
+
+## Step 2 - Set up Java project
+
+I used IntelliJ and Gradle for all things Java these days. So I created a Gradle project and first thing was imported the Selenium Java library like so:
+
+```java
+compile('org.seleniumhq.selenium:selenium-java:2.48.2')
+```
+
+Re-sync gradle and you can verify that the library was imported by importing Selenium classes in your main Java class like so:
+
+```java
+import org.openqa.selenium.WebDriver;
+```
+
+## Step 3 - Write code to get data in table
+
+First create a web driver:
+
+```java
+WebDriver driver = new FirefoxDriver();
+```
+
+Now write code to get all the text from the table:
+
+```java
+private String getTableText(WebDriver driver, String url) {
+  driver.get(url);
+  WebElement findElement = driver.findElement(By.id("playertable_0"));
+
+  return findElement.getText();
+}
+```
+
+This will return you basically every cell separated by a new line string (`\n`). Not exactly what I was expecting or hoping for. So will need a smart way to make sense of this. Luckily the lines are all in order so we can come up with some algorithm like:
+
+**Start with an empty string and iterate over the array of lines:**
+
+- Concatenate the line to the string.
+- Check if string starts with a team name and ends with a double.
+- If true add line to team avg points against list and reset string. If not go back to 1st step.
+
+```java
+String htmlTableText = getTableText(driver, url);
+String[] lines = htmlTableText.split("\\n");
+
+List<String> strings = new ArrayList<String>();
+
+//skip first two header lines
+for (int i = 2; i < lines.length; i++) {
+  String fullLine = lines[i];
+
+  while (!isFullLine(fullLine) && i < lines.length) {
+    fullLine += " " + lines[++i] + " ";
+  }
+  strings.add(fullLine);
+}
+```
+
+```java
+private boolean isFullLine(String line) {
+  boolean result = false;
+
+  String[] splits = line.split("\\s");
+
+  //if starts with a team mascot name and ends with a double
+  if (NFLConstants.NFL_TEAM_MAP.containsKey(splits[0])) {
+    int size = splits.length;
+
+    // if not a double, an exception will be thrown.
+    // not the best code but what the hey.
+    try {
+      double num = Double.parseDouble(splits[size - 1].toString());
+      result = true;
+    } catch (Exception e) {
+    }
+  }
+
+  return result;
+}
+```
+
+NFL_TEAM_MAP is a map where the keys are mascot names and the values are the locations:
+
+```java
+NFL_TEAM_MAP.put(JETS, new NFLTeam(JETS, JETS_LOC));
+NFL_TEAM_MAP.put(GIANTS, new NFLTeam(GIANTS, GIANTS_LOC));
+NFL_TEAM_MAP.put(SEAHAWKS, new NFLTeam(SEAHAWKS, SEAHAWKS_LOC));
+```
+
+Now that we got the data from the table all sorted out into a list of strings we can understand, let's parse them.
+
+## Step 4 - Parse strings
+
+Parsing the string is the easiest part for this example, since we are just parsing out the team and the average points against. Not all the stuff in the middle. Just the first and last parts of the string array.
+
+```java
+public class NonKickerPointsAgainstDto extends PointsAgainstDto {
+    public NonKickerPointsAgainstDto(String[] parts, int type) {
+        setType(type);
+        setAvgPoints(parts[parts.length - 1]);
+        setTeam(parts[0]);
+    }
+
+    @Override
+    public String toString() {
+        return getTeam().getMascot() + " vs " + Constants.TYPES.get(type)
+          + " surrender on average " + getAvgPoints() + " fantasy points";
+    }
+}
+```
+
+To make the string array from the string we created, we will split it by a regex statement:
+
+```java
+String [] parts = line.split("\\s+");
+return new NonKickerPointsAgainstDto(parts, type);
+```
+
+The TYPES map:
+
+```java
+public static final Map<Integer, String> TYPES = new HashMap<Integer, String>();
+static {
+  TYPES.put(POINTSAGAINST_QB_TYPE, "QB");
+  TYPES.put(POINTSAGAINST_RB_TYPE, "RB");
+  TYPES.put(POINTSAGAINST_WR_TYPE, "WR");
+  TYPES.put(POINTSAGAINST_TE_TYPE, "TE");
+  TYPES.put(POINTSAGAINST_K_TYPE, "K");
+  TYPES.put(POINTSAGAINST_D_TYPE, "D");
+}
+```
+
+That's it. Now once you are finished, close and quit the web driver to clean up:
+
+```java
+driver.close();
+driver.quit();
+```
+
+## Step 5 - Output
+
+Sample output of program:
+
+```
+QB
+------------------------
+Saints vs QB surrender on average 23.7 fantasy points
+Ravens vs QB surrender on average 21.5 fantasy points
+Lions vs QB surrender on average 19.1 fantasy points
+Raiders vs QB surrender on average 18.9 fantasy points
+Buccaneers vs QB surrender on average 18.8 fantasy points
+Giants vs QB surrender on average 18.2 fantasy points
+Browns vs QB surrender on average 18.0 fantasy points
+Jaguars vs QB surrender on average 17.9 fantasy points
+Bears vs QB surrender on average 17.6 fantasy points
+...
+```
+
+## Conclusion
+
+Check out the full source on [GitHub](https://github.com/rdanielmurphy/FantasyFootballScraper).
