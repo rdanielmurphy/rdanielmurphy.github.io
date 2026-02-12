@@ -7,13 +7,15 @@ export function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const { meta } = getPost(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const { meta } = getPost(slug);
   return { title: meta.title };
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const { meta, content } = getPost(params.slug);
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const { meta, content } = getPost(slug);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-20">
