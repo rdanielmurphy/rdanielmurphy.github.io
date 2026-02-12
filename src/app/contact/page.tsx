@@ -6,7 +6,6 @@ export const metadata: Metadata = { title: "Contact" };
 const links = [
   { label: "GitHub", href: "https://github.com/rdanielmurphy", icon: "🐙" },
   { label: "LinkedIn", href: "https://linkedin.com/in/rdanielmurphy", icon: "💼" },
-  { label: "Twitter", href: "https://twitter.com/rdanielmurphy", icon: "🐦" },
 ];
 
 export default function Contact() {
