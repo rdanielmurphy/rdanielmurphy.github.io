@@ -1,0 +1,63 @@
+---
+title: "Rebuilding My Website with an AI Coding Agent"
+date: "2026-02-11"
+excerpt: "How I used OpenClaw to rebuild my personal site from scratch with Next.js, Tailwind, and MDX."
+---
+
+*Written by AI*
+
+I've been meaning to rebuild my personal site for a while. The old Jekyll setup served me well, but it was starting to feel dated and I wanted something with more flexibility. Instead of spending a weekend grinding through boilerplate, I decided to try something different: I'd let an AI agent do the heavy lifting.
+
+## What is OpenClaw?
+
+[OpenClaw](https://github.com/openclaw/openclaw) is an open-source AI agent gateway. Think of it as a persistent assistant that lives on your machine with access to your filesystem, terminal, browser, and various APIs. You chat with it, and it can actually *do things* — read files, run commands, write code, search the web, manage git repos. It's not a chatbot pretending to code; it has real tool access.
+
+I set it up on my Mac and connected it through a chat interface. From there, it was basically like pair programming with a very fast, very patient colleague.
+
+## The Rebuild
+
+Here's roughly how it went:
+
+### 1. Scaffolding
+
+I told the agent I wanted a modern personal site — Next.js, Tailwind CSS, TypeScript, MDX for blog posts. It scaffolded the whole project: routing, layout, components, config files. The usual stuff that takes an hour of copying from docs took about a minute.
+
+### 2. Components
+
+The agent built out the key pieces:
+- **Navbar** with theme toggling (dark/light mode)
+- **Hero section** for the landing page
+- **Blog system** with MDX parsing and dynamic routes
+- **Project cards** for showcasing work
+- **Resume and contact pages**
+- **Scroll animations** for some visual polish
+
+Each component was a back-and-forth. I'd describe what I wanted, the agent would generate it, I'd ask for tweaks, and we'd iterate. Felt like a normal code review cycle, just faster.
+
+### 3. Migrating Blog Posts
+
+I had a bunch of old blog posts from the Jekyll days. The agent converted them to MDX format with proper frontmatter. All the metadata — titles, dates, excerpts — carried over cleanly.
+
+### 4. Deployment
+
+When the code was ready, I had the agent copy everything into my `rdanielmurphy.github.io` repo and create a branch. It handled the git operations — staging, committing, setting up the remote branch. (We hit a credential snag with HTTPS that needed a quick SSH remote swap, but that's life.) Hosted by Vercel which self deploys on merge to main.
+
+## What Worked Well
+
+**Speed.** The whole thing came together in a fraction of the time it would've taken me solo. Not because the code was simple, but because the agent never had to context-switch, look up docs, or get distracted.
+
+**Iteration.** Saying "make the hero section taller" or "add dark mode to this component" and getting working code back in seconds is a different workflow than manually editing and refreshing.
+
+**Boring stuff automation.** Config files, boilerplate, file structure, git operations — all the stuff that's necessary but not interesting. The agent handled it without complaint.
+
+## What I'd Do Differently
+
+I'd be more specific upfront about design. The agent is great at executing, but "make it look good" is a vague prompt. The more concrete I was — specific colors, spacing, layout references — the better the output.
+
+I'd also set up the git credentials before asking it to push. Small thing, but it interrupted the flow.
+
+## The Takeaway
+
+This isn't about replacing developers. I still made all the decisions — tech stack, design direction, content, structure. The agent just eliminated the gap between "I want this" and "this exists." It's a tool, and like any good tool, it makes you faster at the thing you already know how to do.
+
+If you're curious, [OpenClaw is open source](https://github.com/openclaw/openclaw). Worth a look if you like the idea of an AI that can actually touch your codebase instead of just talking about it.
