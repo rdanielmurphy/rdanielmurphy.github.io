@@ -24,11 +24,6 @@ export default function About() {
         <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
           I build things that work, look good, and solve real problems. Let's create something together.
         </p>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
-          I&apos;ve been writing software professionally for years, working across the full stack
-          from databases to deployment. When I&apos;m not coding, you&apos;ll find me traveling,
-          at a poker table, or exploring the local food scene.
-        </p>
       </AnimatedSection>
 
       <ScrollReveal>
