@@ -16,8 +16,13 @@ export default function About() {
       <AnimatedSection>
         <h1 className="text-4xl font-bold mb-6">About Me</h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
-          Hey! I&apos;m Dan — a Full Stack Developer based in the DC metro area.
-          I love building things for the web, exploring new places, and playing poker.
+          I'm Daniel, a full-stack developer based in the DFW area who's equally comfortable architecting infrastructure, designing databases, building backends, and crafting frontends—though I'll admit I have a soft spot for React and React Native. There's something satisfying about bringing ideas to life through clean, responsive interfaces that people actually enjoy using.
+        </p>
+        <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
+          When I'm not deep in code, you'll find me chasing waves while surfing, staying active, or working on something with my hands. I believe the best developers are the ones who step away from the screen regularly—whether that's to build something physical, break a sweat, or just remember what it feels like to be a user experiencing the world beyond a browser.
+        </p>
+        <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
+          I build things that work, look good, and solve real problems. Let's create something together.
         </p>
         <p className="text-gray-600 dark:text-gray-400 mb-8">
           I&apos;ve been writing software professionally for years, working across the full stack
