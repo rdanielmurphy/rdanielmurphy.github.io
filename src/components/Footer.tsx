@@ -3,7 +3,6 @@ import Link from "next/link";
 const socials = [
   { label: "GitHub", href: "https://github.com/rdanielmurphy" },
   { label: "LinkedIn", href: "https://linkedin.com/in/rdanielmurphy" },
-  { label: "Twitter", href: "https://twitter.com/rdanielmurphy" },
 ];
 
 export default function Footer() {
