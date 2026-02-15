@@ -109,9 +109,9 @@ const jobs = [
 ];
 
 const skillCategories: { label: string; skills: string[] }[] = [
-  { label: "Languages", skills: ["JavaScript", "TypeScript", "C", "C++", "C#", "Java"] },
-  { label: "Frontend", skills: ["React", "React Native", "Angular", "Vue", "Vuex", "Redux", "Mobx", "D3", "Cesium"] },
-  { label: "Backend", skills: ["NodeJs", "Express", "GraphQL", "REST"] },
+  { label: "Languages", skills: ["JavaScript", "TypeScript", "Java", "C++", "C#", "C"] },
+  { label: "Frontend", skills: ["React", "React Native", "Angular", "Vue", "Vuex", "Redux", "Three.js", "Mobx", "Next.js", "D3", "Tailwind CSS", "Cesium"] },
+  { label: "Backend", skills: ["Node.js", "GraphQL", "REST"] },
   { label: "Database", skills: ["Postgres", "MongoDB", "SQLite", "ElasticSearch"] },
   { label: "DevOps / Cloud", skills: ["AWS", "Docker", "Git"] },
   { label: "Testing", skills: ["Jest"] },
