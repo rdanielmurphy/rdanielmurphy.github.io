@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: { default: "Daniel Murphy — Full Stack Developer", template: "%s | Daniel Murphy" },
-  description: "Personal website of Daniel Murphy — Full Stack Developer, traveler, poker player.",
+  description: "Personal website of Daniel Murphy — Full Stack Developer",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
