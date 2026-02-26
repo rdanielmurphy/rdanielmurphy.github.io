@@ -14,9 +14,8 @@ const jobs = [
     period: "09/2025 – Present",
     bullets: [
       "Launched a mobile app using React Native for iOS and Android, enabling users to create inspection reports, with a projected launch in early 2026.",
-      "Integrated AI-powered features using AWS Bedrock and OpenClaw for automated report generation and workflow assistance.",
     ],
-    skills: ["React Native", "JavaScript", "TypeScript", "AWS Bedrock", "OpenClaw", "LLM Integration"],
+    skills: ["React Native", "JavaScript", "TypeScript", "OpenClaw"],
   },
   {
     company: "Capitalize",
@@ -28,9 +27,9 @@ const jobs = [
       "Enabled SSO login for major advisor firms.",
       "Built automation scripts using Puppeteer.",
       "Developed a React-based embedded webview for enterprise partners.",
-      "Leveraged LLMs and prompt engineering to accelerate development workflows.",
+      "Leveraged AWS Bedrock and custom LLM integration to build AI features, including RAG-based knowledge retrieval and prompt engineering for enhanced user interactions.",
     ],
-    skills: ["React", "JavaScript", "TypeScript", "REST", "Prompt Engineering"],
+    skills: ["React", "JavaScript", "TypeScript", "REST", "AWS Bedrock", "LLM Integration", "RAG", "Prompt Engineering"],
   },
   {
     company: "Novetta",
