@@ -14,8 +14,9 @@ const jobs = [
     period: "09/2025 – Present",
     bullets: [
       "Launched a mobile app using React Native for iOS and Android, enabling users to create inspection reports, with a projected launch in early 2026.",
+      "Integrated AI-powered features using AWS Bedrock and OpenClaw for automated report generation and workflow assistance.",
     ],
-    skills: ["React Native", "JavaScript", "TypeScript"],
+    skills: ["React Native", "JavaScript", "TypeScript", "AWS Bedrock", "OpenClaw", "LLM Integration"],
   },
   {
     company: "Capitalize",
@@ -27,8 +28,9 @@ const jobs = [
       "Enabled SSO login for major advisor firms.",
       "Built automation scripts using Puppeteer.",
       "Developed a React-based embedded webview for enterprise partners.",
+      "Leveraged LLMs and prompt engineering to accelerate development workflows.",
     ],
-    skills: ["React", "JavaScript", "TypeScript", "REST"],
+    skills: ["React", "JavaScript", "TypeScript", "REST", "Prompt Engineering"],
   },
   {
     company: "Novetta",
@@ -109,10 +111,11 @@ const jobs = [
 ];
 
 const skillCategories: { label: string; skills: string[] }[] = [
-  { label: "Languages", skills: ["JavaScript", "TypeScript", "Java", "C++", "C#", "C"] },
+  { label: "Languages", skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "C#", "C"] },
   { label: "Frontend", skills: ["React", "React Native", "Angular", "Vue", "Vuex", "Redux", "Three.js", "Mobx", "Next.js", "D3", "Tailwind CSS", "Cesium"] },
   { label: "Backend", skills: ["Node.js", "GraphQL", "REST"] },
   { label: "Database", skills: ["Postgres", "MongoDB", "SQLite", "ElasticSearch"] },
+  { label: "AI / ML", skills: ["AWS Bedrock", "OpenClaw", "LLM Integration", "Prompt Engineering", "RAG"] },
   { label: "DevOps / Cloud", skills: ["AWS", "Docker", "Git"] },
   { label: "Testing", skills: ["Jest"] },
 ];
