@@ -724,17 +724,20 @@ export default function AboutScene() {
             className="w-full lg:w-1/2"
           >
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              About Me!
+              About Me
             </h1>
             <div className="space-y-4 text-gray-400 text-lg leading-relaxed">
               <p>
-                I&apos;m Daniel, a full-stack developer based in the DFW area
-                who&apos;s equally comfortable architecting infrastructure,
-                designing databases, building backends, and crafting
-                frontends—though I&apos;ll admit I have a soft spot for frontend such 
-                as React and React Native. There&apos;s something satisfying about
-                bringing ideas to life through clean, responsive interfaces that
-                people actually enjoy using.
+                I&apos;m Daniel, a full-stack developer and AI consultant based
+                in the DFW area who&apos;s equally comfortable architecting
+                infrastructure, designing databases, building backends, and
+                crafting frontends—though I&apos;ll admit I have a soft spot for
+                frontend such as React and React Native. There&apos;s something satisfying about
+                bringing ideas to life—whether through clean, responsive
+                interfaces or smart systems that people actually enjoy using. I also work with teams
+                to integrate AI into their products and workflows, from LLM-powered
+                features and intelligent automation to custom AI agents and
+                prompt engineering.
               </p>
               <p>
                 When I&apos;m not deep in code, you&apos;ll find me chasing
